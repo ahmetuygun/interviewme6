@@ -1,0 +1,111 @@
+<div class="d-flex justify-content-center">
+  <div class="col-12">
+    <h2
+      id="jhi-interview-appointment-heading"
+      data-cy="InterviewAppointmentCreateUpdateHeading"
+      jhiTranslate="interviewme6App.interviewAppointment.home.createOrEditLabel"
+    >
+      Create or edit a Interview Appointment
+    </h2>
+
+    <div>
+      <jhi-alert-error></jhi-alert-error>
+
+      <div class="container py-4">
+        <div class="row">
+          <div class="col-md-4">
+
+            <ngb-datepicker
+              class="custom-datepicker"
+              (dateSelect)="onDateSelection($event)"
+              [minDate]="minDate"
+              [maxDate]="maxDate"
+            ></ngb-datepicker>
+          </div>
+
+
+          <div class="col-md-6">
+            <h4>Available Slots:</h4>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="row">
+                  <div class="col-md-2" *ngFor="let slot of timeSlots">
+                    <button type="button"
+                            (click)="selectSlot(slot)"
+                            [disabled]="!isEnabledSlot(slot)"
+                            class="btn m-1 custom-slot"
+                            [class.disabled-button]="!isEnabledSlot(slot)"
+                            [class.btn-outline-primary]="slot !== selectedSlot"
+                            [class.btn-primary]="slot === selectedSlot">
+                      {{ slot }}
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex justify-content-end">
+
+      <button
+        (click)="this.openVerticallyCentered($event, content)"
+        data-cy="entityCreateSaveButton"
+        [disabled]="isSaving ||   this.selectedSlot == '' "
+        class="btn btn-primary">
+        <span >Next</span>&nbsp; <fa-icon icon="arrow-right"></fa-icon>&nbsp;
+      </button>
+
+    </div>
+
+    <ng-template #content let-modal class="rounded-4">
+
+      <div class="rounded-4">
+        <div class="modal-header ">
+          <h4 class="modal-title">Appointment Summary</h4>
+        </div>
+        <div class="modal-body rounded-4">
+                <span class="text-muted year rounded-4">
+          <fa-icon  icon="calendar-days" class="ms-1"></fa-icon> &nbsp;
+                  {{ this.formatDate(appointmentDetail) }}
+                  <fa-icon  icon="clock" class="ms-1"></fa-icon> &nbsp;
+                  {{ appointmentDetail?.slot}} - {{ this.getOneHourLater(appointmentDetail?.slot) }}
+        </span>
+          <dl class="row-md jh-entity-details">
+
+            <dt>
+              <span >Interviewer:</span>
+            </dt>
+            <dd>
+              <span>{{ appointmentDetail?.interviewer?.personalDetail?.firstName }} {{ appointmentDetail?.interviewer?.personalDetail?.lastName }} </span>
+            </dd>
+
+            <dt>
+              <span>Interviewee:</span>
+              <fa-icon icon="user-tie" class="float-end ms-1 text-success"></fa-icon>
+            </dt>
+            <dd>
+              <span>{{ appointmentDetail?.interviewee?.personalDetail?.firstName }} {{ appointmentDetail?.interviewee?.personalDetail?.lastName }} </span>
+            </dd>
+
+          </dl>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" (click)="modal.close('Close click')">Close</button>
+          <button
+            (click)="this.save(content)"
+            id="save-entity"
+            data-cy="entityCreateSaveButton"
+            [disabled]="isSaving"
+            class="btn btn-primary"
+          >
+            <fa-icon icon="save"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+          </button>
+        </div>
+      </div>
+    </ng-template>
+
+
+  </div>
+</div>

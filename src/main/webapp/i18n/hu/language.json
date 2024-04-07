@@ -1,0 +1,27 @@
+{
+  "interviewme6App": {
+    "language": {
+      "home": {
+        "title": "Languages",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Egy új Language létrehozása",
+        "createOrEditLabel": "Hozzon létre, vagy módosítson Languaget",
+        "notFound": "No Languages found"
+      },
+      "created": "Egy új Language lett létrehozva {{ param }} azonosítóval",
+      "updated": "A Language módosítva lett {{ param }} azonosítóval",
+      "deleted": "A Language törölve lett {{ param }} azonosítóval",
+      "delete": {
+        "question": "Biztos benne, hogy törölni szeretné az Languaget {{ id }} azonosítóval?"
+      },
+      "detail": {
+        "title": "Language"
+      },
+      "id": "ID",
+      "name": "Name",
+      "code": "Code",
+      "isNative": "Is Native",
+      "personalDetail": "Personal Detail"
+    }
+  }
+}

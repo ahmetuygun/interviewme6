@@ -1,0 +1,26 @@
+{
+  "interviewme6App": {
+    "skill": {
+      "home": {
+        "title": "Skills",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Vytvořit Skill",
+        "createOrEditLabel": "Vytvořit nebo upravit Skill",
+        "notFound": "No Skills found"
+      },
+      "created": "Byl vytvořen potomek entity Skill s identifikátorem {{ param }}",
+      "updated": "Potomek entity Skill s identifikátorem {{ param }} byl upravený.",
+      "deleted": "Potomek entity Skill s identifikátorem {{ param }} bol smazaný.",
+      "delete": {
+        "question": "Jste si jisti, že chcete smazat Skill {{ id }}?"
+      },
+      "detail": {
+        "title": "Skill"
+      },
+      "id": "ID",
+      "name": "Name",
+      "type": "Type",
+      "personalDetail": "Personal Detail"
+    }
+  }
+}

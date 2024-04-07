@@ -1,0 +1,27 @@
+{
+  "interviewme6App": {
+    "interviewNote": {
+      "home": {
+        "title": "Interview Notes",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Skapa en ny Interview Note",
+        "createOrEditLabel": "Skapa eller ändra en Interview Note",
+        "notFound": "No Interview Notes found"
+      },
+      "created": "En ny Interview Note är skapad med id {{ param }}",
+      "updated": "En Interview Note är uppdaterad med id  {{ param }}",
+      "deleted": "En Interview Note är borttagen med id  {{ param }}",
+      "delete": {
+        "question": "Är du säker på att du vill ta bort Interview Note {{ id }}?"
+      },
+      "detail": {
+        "title": "Interview Note"
+      },
+      "id": "ID",
+      "noteText": "Note Text",
+      "rating": "Rating",
+      "actionItems": "Action Items",
+      "feedback": "Feedback"
+    }
+  }
+}

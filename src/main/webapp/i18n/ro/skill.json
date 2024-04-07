@@ -1,0 +1,26 @@
+{
+  "interviewme6App": {
+    "skill": {
+      "home": {
+        "title": "Skills",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Creeare o nouă entitate Skill",
+        "createOrEditLabel": "Creeare sau editare Skill",
+        "notFound": "No Skills found"
+      },
+      "created": "A fost creată o nouă entitate Skill cu identificatorul {{ param }}",
+      "updated": "Skill cu identificatorul {{ param }} a fost actualizată",
+      "deleted": "Skill cu identificatorul {{ param }} a fost ștearsă",
+      "delete": {
+        "question": "Sunteți sigur că doriți să ștergeți Skill {{ id }}?"
+      },
+      "detail": {
+        "title": "Skill"
+      },
+      "id": "ID",
+      "name": "Name",
+      "type": "Type",
+      "personalDetail": "Personal Detail"
+    }
+  }
+}

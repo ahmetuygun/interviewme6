@@ -1,0 +1,40 @@
+{
+  "interviewme6App": {
+    "workExperienceEntry": {
+      "home": {
+        "title": "WorkExperienceEntries",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Egy új Work Experience Entry létrehozása",
+        "createOrEditLabel": "Hozzon létre, vagy módosítson Work Experience Entryt",
+        "notFound": "No Work Experience Entries found"
+      },
+      "created": "Egy új Work Experience Entry lett létrehozva {{ param }} azonosítóval",
+      "updated": "A Work Experience Entry módosítva lett {{ param }} azonosítóval",
+      "deleted": "A Work Experience Entry törölve lett {{ param }} azonosítóval",
+      "delete": {
+        "question": "Biztos benne, hogy törölni szeretné az Work Experience Entryt {{ id }} azonosítóval?"
+      },
+      "detail": {
+        "title": "Work Experience Entry"
+      },
+      "id": "ID",
+      "title": "Title",
+      "startDate": "Start Date",
+      "endDate": "End Date",
+      "company": "Company",
+      "description": "Description",
+      "industry": "Industry",
+      "formattedLocation": "Formatted Location",
+      "postalCode": "Postal Code",
+      "region": "Region",
+      "country": "Country",
+      "countryCode": "Country Code",
+      "rawInputLocation": "Raw Input Location",
+      "street": "Street",
+      "streetNumber": "Street Number",
+      "apartmentNumber": "Apartment Number",
+      "city": "City",
+      "personalDetail": "Personal Detail"
+    }
+  }
+}

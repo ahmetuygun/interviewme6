@@ -1,0 +1,62 @@
+<div class="container">
+  <div class="row">
+    <!-- First Column -->
+    <div class="col-md-7 p-5 bg-custom-indigo rounded-4">
+      <div class="text-white">
+        <div class="row">
+          <div #remotePlayerContainer class="remote-user bg-custom-indigo-lighter d-flex justify-content-center align-items-center">
+            <div class="spinner-border" role="status" *ngIf="channelParameters.remoteUser ? false : true">
+              <span
+              class="sr-only">Loading...</span>
+            </div>
+          </div>
+        </div>
+        <div class="row text-center buttons pt-3">
+          <div #localPlayerContainer class="local-user bg-custom-indigo-lighter">
+            <!-- Content of localPlayerContainer -->
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="buttons-container">
+            <div class="buttons">
+              <button
+                (click)="joinByInfo()"
+                class="btn btn-secondary rounded-4 hover-bg-black-90">
+                <fa-icon class="m-1" [icon]="faPlay" [style.color]="'#ffff'"></fa-icon>
+              </button>
+
+
+              <button
+                (click)="muteOrUnmuteAudio()"
+                class="btn btn-secondary rounded-4 hover-bg-black-90">
+                <fa-icon class="m-1"
+                         [icon]="channelParameters.localAudioTrack?.muted ? faMicrophone : faMicrophoneSlash "></fa-icon>
+              </button>
+
+              <button
+                (click)="turnCameraOnOrOff()"
+                class="btn btn-secondary rounded-4 hover-bg-black-90">
+                <fa-icon class="m-1"
+                         [icon]="channelParameters.localVideoTrack?.enabled ? faVideoSlash : faVideo"></fa-icon>
+              </button>
+
+              <button
+                (click)="leave()"
+                class="btn btn-secondary rounded-4 hover-bg-black-90">
+                <fa-icon class="m-1" [icon]="faPhoneSlash" [style.color]="'#cc3e3e'"></fa-icon>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="col-md-5">
+      <div>
+
+        <jhi-interview-note-update></jhi-interview-note-update>
+      </div>
+    </div>
+  </div>
+</div>
+

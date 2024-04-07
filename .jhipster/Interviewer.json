@@ -1,0 +1,55 @@
+{
+  "annotations": {
+    "changelogDate": "20240127200825"
+  },
+  "applications": "*",
+  "entityTableName": "interviewer",
+  "fields": [
+    {
+      "fieldName": "photo",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "image"
+    }
+  ],
+  "jpaMetamodelFiltering": true,
+  "name": "Interviewer",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "user",
+      "relationshipName": "internalUser",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-one",
+      "relationshipWithBuiltInEntity": true
+    },
+    {
+      "otherEntityName": "personalDetail",
+      "relationshipName": "personalDetail",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "interviewSubject",
+      "otherEntityRelationshipName": "interviewer",
+      "relationshipName": "subjects",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "slot",
+      "otherEntityRelationshipName": "interviewer",
+      "relationshipName": "slots",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "interviewAppointment",
+      "otherEntityRelationshipName": "interviewer",
+      "relationshipName": "appointment",
+      "relationshipSide": "right",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

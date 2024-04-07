@@ -1,0 +1,26 @@
+{
+  "interviewme6App": {
+    "skill": {
+      "home": {
+        "title": "Skill",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Dodaj Skill",
+        "createOrEditLabel": "Dodaj lub edytuj: Skill",
+        "notFound": "No Skills found"
+      },
+      "created": "Utworzono nowy obiekt typu Skill z identyfikatorem {{ param }}",
+      "updated": "Uaktualniono obiekt typu Skill z identyfikatorem {{ param }}",
+      "deleted": "Usunięto obiekt typu Skill z identyfikatorem {{ param }}",
+      "delete": {
+        "question": "Czy na pewno chcesz usunąć Skill {{ id }}?"
+      },
+      "detail": {
+        "title": "Skill"
+      },
+      "id": "ID",
+      "name": "Name",
+      "type": "Type",
+      "personalDetail": "Personal Detail"
+    }
+  }
+}

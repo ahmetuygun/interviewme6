@@ -1,0 +1,37 @@
+{
+  "annotations": {
+    "changelogDate": "20240127201025"
+  },
+  "applications": "*",
+  "entityTableName": "membership_level",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "sessionAmount",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "price",
+      "fieldType": "Double"
+    }
+  ],
+  "name": "MembershipLevel",
+  "relationships": [
+    {
+      "otherEntityName": "interviewee",
+      "otherEntityRelationshipName": "membership",
+      "relationshipName": "interviewee",
+      "relationshipSide": "right",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

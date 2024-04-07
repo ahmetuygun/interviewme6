@@ -1,0 +1,31 @@
+{
+  "interviewme6App": {
+    "educationEntry": {
+      "home": {
+        "title": "EducationEntries",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Egy új Education Entry létrehozása",
+        "createOrEditLabel": "Hozzon létre, vagy módosítson Education Entryt",
+        "notFound": "No Education Entries found"
+      },
+      "created": "Egy új Education Entry lett létrehozva {{ param }} azonosítóval",
+      "updated": "A Education Entry módosítva lett {{ param }} azonosítóval",
+      "deleted": "A Education Entry törölve lett {{ param }} azonosítóval",
+      "delete": {
+        "question": "Biztos benne, hogy törölni szeretné az Education Entryt {{ id }} azonosítóval?"
+      },
+      "detail": {
+        "title": "Education Entry"
+      },
+      "id": "ID",
+      "title": "Title",
+      "startDate": "Start Date",
+      "endDate": "End Date",
+      "establishment": "Establishment",
+      "description": "Description",
+      "gpa": "Gpa",
+      "accreditation": "Accreditation",
+      "personalDetail": "Personal Detail"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "interviewme6App": {
+    "workExperienceEntry": {
+      "home": {
+        "title": "Work Experience Entries",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Kreiraj novi Work Experience Entry",
+        "createOrEditLabel": "Kreirajte ili izmenite Work Experience Entry",
+        "notFound": "No Work Experience Entries found"
+      },
+      "created": "Kreiran je novi Work Experience Entry pod nazivom {{ param }}",
+      "updated": "Work Experience Entry pod nazivom {{ param }} je ažuriran",
+      "deleted": "Work Experience Entry pod nazivom {{ param }} je obrisan",
+      "delete": {
+        "question": "Da li ste sigurni da želite da obrišete Work Experience Entry pod nazivom {{ id }}?"
+      },
+      "detail": {
+        "title": "Work Experience Entry"
+      },
+      "id": "ID",
+      "title": "Title",
+      "startDate": "Start Date",
+      "endDate": "End Date",
+      "company": "Company",
+      "description": "Description",
+      "industry": "Industry",
+      "formattedLocation": "Formatted Location",
+      "postalCode": "Postal Code",
+      "region": "Region",
+      "country": "Country",
+      "countryCode": "Country Code",
+      "rawInputLocation": "Raw Input Location",
+      "street": "Street",
+      "streetNumber": "Street Number",
+      "apartmentNumber": "Apartment Number",
+      "city": "City",
+      "personalDetail": "Personal Detail"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "interviewme6App": {
+    "interviewee": {
+      "home": {
+        "title": "Interviewees",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Kreiraj novi Interviewee",
+        "createOrEditLabel": "Kreirajte ili izmenite Interviewee",
+        "notFound": "No Interviewees found"
+      },
+      "created": "Kreiran je novi Interviewee pod nazivom {{ param }}",
+      "updated": "Interviewee pod nazivom {{ param }} je ažuriran",
+      "deleted": "Interviewee pod nazivom {{ param }} je obrisan",
+      "delete": {
+        "question": "Da li ste sigurni da želite da obrišete Interviewee pod nazivom {{ id }}?"
+      },
+      "detail": {
+        "title": "Interviewee"
+      },
+      "id": "ID",
+      "photo": "Photo",
+      "internalUser": "Internal User",
+      "personalDetail": "Personal Detail",
+      "membership": "Membership",
+      "appointment": "Appointment"
+    }
+  }
+}

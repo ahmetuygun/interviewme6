@@ -1,0 +1,27 @@
+{
+  "interviewme6App": {
+    "interviewNote": {
+      "home": {
+        "title": "Interview Notes",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Kreiraj novi Interview Note",
+        "createOrEditLabel": "Kreirajte ili izmenite Interview Note",
+        "notFound": "No Interview Notes found"
+      },
+      "created": "Kreiran je novi Interview Note pod nazivom {{ param }}",
+      "updated": "Interview Note pod nazivom {{ param }} je ažuriran",
+      "deleted": "Interview Note pod nazivom {{ param }} je obrisan",
+      "delete": {
+        "question": "Da li ste sigurni da želite da obrišete Interview Note pod nazivom {{ id }}?"
+      },
+      "detail": {
+        "title": "Interview Note"
+      },
+      "id": "ID",
+      "noteText": "Note Text",
+      "rating": "Rating",
+      "actionItems": "Action Items",
+      "feedback": "Feedback"
+    }
+  }
+}

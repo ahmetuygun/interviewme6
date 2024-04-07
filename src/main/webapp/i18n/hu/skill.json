@@ -1,0 +1,26 @@
+{
+  "interviewme6App": {
+    "skill": {
+      "home": {
+        "title": "Skills",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Egy új Skill létrehozása",
+        "createOrEditLabel": "Hozzon létre, vagy módosítson Skillt",
+        "notFound": "No Skills found"
+      },
+      "created": "Egy új Skill lett létrehozva {{ param }} azonosítóval",
+      "updated": "A Skill módosítva lett {{ param }} azonosítóval",
+      "deleted": "A Skill törölve lett {{ param }} azonosítóval",
+      "delete": {
+        "question": "Biztos benne, hogy törölni szeretné az Skillt {{ id }} azonosítóval?"
+      },
+      "detail": {
+        "title": "Skill"
+      },
+      "id": "ID",
+      "name": "Name",
+      "type": "Type",
+      "personalDetail": "Personal Detail"
+    }
+  }
+}

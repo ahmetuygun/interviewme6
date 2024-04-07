@@ -1,0 +1,26 @@
+{
+  "interviewme6App": {
+    "skill": {
+      "home": {
+        "title": "Skills",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Maak een nieuwe Skill",
+        "createOrEditLabel": "Maak of wijzig een Skill",
+        "notFound": "No Skills found"
+      },
+      "created": "A new Skill is created with identifier {{ param }}",
+      "updated": "A Skill is updated with identifier {{ param }}",
+      "deleted": "A Skill is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Bent u zeker dat u Skill {{ id }} wilt verwijderen?"
+      },
+      "detail": {
+        "title": "Skill"
+      },
+      "id": "ID",
+      "name": "Name",
+      "type": "Type",
+      "personalDetail": "Personal Detail"
+    }
+  }
+}

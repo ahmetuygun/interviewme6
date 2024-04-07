@@ -1,0 +1,48 @@
+{
+  "annotations": {
+    "changelogDate": "20240127200925"
+  },
+  "applications": "*",
+  "entityTableName": "interviewee",
+  "fields": [
+    {
+      "fieldName": "photo",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "image"
+    }
+  ],
+  "jpaMetamodelFiltering": true,
+  "name": "Interviewee",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "user",
+      "relationshipName": "internalUser",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-one",
+      "relationshipWithBuiltInEntity": true
+    },
+    {
+      "otherEntityName": "personalDetail",
+      "relationshipName": "personalDetail",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "membershipLevel",
+      "otherEntityRelationshipName": "interviewee",
+      "relationshipName": "membership",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "interviewAppointment",
+      "otherEntityRelationshipName": "interviewee",
+      "relationshipName": "appointment",
+      "relationshipSide": "right",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

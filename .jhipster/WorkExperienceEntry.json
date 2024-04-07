@@ -1,0 +1,87 @@
+{
+  "annotations": {
+    "changelogDate": "20240127201425"
+  },
+  "applications": "*",
+  "entityTableName": "work_experience_entry",
+  "fields": [
+    {
+      "fieldName": "title",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "startDate",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "endDate",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "company",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "industry",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "formattedLocation",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "postalCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "region",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "country",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "countryCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "rawInputLocation",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "street",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "streetNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "apartmentNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "city",
+      "fieldType": "String"
+    }
+  ],
+  "jpaMetamodelFiltering": true,
+  "name": "WorkExperienceEntry",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "personalDetail",
+      "otherEntityRelationshipName": "work",
+      "relationshipName": "personalDetail",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

@@ -1,0 +1,165 @@
+{
+  "annotations": {
+    "changelogDate": "20240127201325"
+  },
+  "applications": "*",
+  "entityTableName": "personal_detail",
+  "fields": [
+    {
+      "fieldName": "cv",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "any"
+    },
+    {
+      "fieldName": "firstName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "lastName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "rawName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "middle",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "title",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "prefix",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "suffix",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "formattedLocation",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "postalCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "region",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "country",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "countryCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "rawInputLocation",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "street",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "streetNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "apartmentNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "city",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "selfSummary",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "objective",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dateOfBirth",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "placeOfBirth",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "phones",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "mails",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "urls",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "currentProfession",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "gender",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nationality",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "martialStatus",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "currentSalary",
+      "fieldType": "BigDecimal"
+    }
+  ],
+  "jpaMetamodelFiltering": true,
+  "name": "PersonalDetail",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "workExperienceEntry",
+      "otherEntityRelationshipName": "personalDetail",
+      "relationshipName": "work",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "educationEntry",
+      "otherEntityRelationshipName": "personalDetail",
+      "relationshipName": "education",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "language",
+      "otherEntityRelationshipName": "personalDetail",
+      "relationshipName": "language",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "skill",
+      "otherEntityRelationshipName": "personalDetail",
+      "relationshipName": "skills",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

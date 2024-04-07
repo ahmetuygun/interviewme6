@@ -1,0 +1,106 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    @if (workExperienceEntry) {
+      <div>
+        <h2 data-cy="workExperienceEntryDetailsHeading">
+          <span jhiTranslate="interviewme6App.workExperienceEntry.detail.title">Work Experience Entry</span>
+        </h2>
+
+        <hr />
+
+        <jhi-alert-error></jhi-alert-error>
+
+        <jhi-alert></jhi-alert>
+
+        <dl class="row-md jh-entity-details">
+          <dt><span jhiTranslate="global.field.id">ID</span></dt>
+          <dd>
+            <span>{{ workExperienceEntry.id }}</span>
+          </dd>
+          <dt><span jhiTranslate="interviewme6App.workExperienceEntry.title">Title</span></dt>
+          <dd>
+            <span>{{ workExperienceEntry.title }}</span>
+          </dd>
+          <dt><span jhiTranslate="interviewme6App.workExperienceEntry.startDate">Start Date</span></dt>
+          <dd>
+            <span>{{ workExperienceEntry.startDate | formatMediumDatetime }}</span>
+          </dd>
+          <dt><span jhiTranslate="interviewme6App.workExperienceEntry.endDate">End Date</span></dt>
+          <dd>
+            <span>{{ workExperienceEntry.endDate | formatMediumDatetime }}</span>
+          </dd>
+          <dt><span jhiTranslate="interviewme6App.workExperienceEntry.company">Company</span></dt>
+          <dd>
+            <span>{{ workExperienceEntry.company }}</span>
+          </dd>
+          <dt><span jhiTranslate="interviewme6App.workExperienceEntry.description">Description</span></dt>
+          <dd>
+            <span>{{ workExperienceEntry.description }}</span>
+          </dd>
+          <dt><span jhiTranslate="interviewme6App.workExperienceEntry.industry">Industry</span></dt>
+          <dd>
+            <span>{{ workExperienceEntry.industry }}</span>
+          </dd>
+          <dt><span jhiTranslate="interviewme6App.workExperienceEntry.formattedLocation">Formatted Location</span></dt>
+          <dd>
+            <span>{{ workExperienceEntry.formattedLocation }}</span>
+          </dd>
+          <dt><span jhiTranslate="interviewme6App.workExperienceEntry.postalCode">Postal Code</span></dt>
+          <dd>
+            <span>{{ workExperienceEntry.postalCode }}</span>
+          </dd>
+          <dt><span jhiTranslate="interviewme6App.workExperienceEntry.region">Region</span></dt>
+          <dd>
+            <span>{{ workExperienceEntry.region }}</span>
+          </dd>
+          <dt><span jhiTranslate="interviewme6App.workExperienceEntry.country">Country</span></dt>
+          <dd>
+            <span>{{ workExperienceEntry.country }}</span>
+          </dd>
+          <dt><span jhiTranslate="interviewme6App.workExperienceEntry.countryCode">Country Code</span></dt>
+          <dd>
+            <span>{{ workExperienceEntry.countryCode }}</span>
+          </dd>
+          <dt><span jhiTranslate="interviewme6App.workExperienceEntry.rawInputLocation">Raw Input Location</span></dt>
+          <dd>
+            <span>{{ workExperienceEntry.rawInputLocation }}</span>
+          </dd>
+          <dt><span jhiTranslate="interviewme6App.workExperienceEntry.street">Street</span></dt>
+          <dd>
+            <span>{{ workExperienceEntry.street }}</span>
+          </dd>
+          <dt><span jhiTranslate="interviewme6App.workExperienceEntry.streetNumber">Street Number</span></dt>
+          <dd>
+            <span>{{ workExperienceEntry.streetNumber }}</span>
+          </dd>
+          <dt><span jhiTranslate="interviewme6App.workExperienceEntry.apartmentNumber">Apartment Number</span></dt>
+          <dd>
+            <span>{{ workExperienceEntry.apartmentNumber }}</span>
+          </dd>
+          <dt><span jhiTranslate="interviewme6App.workExperienceEntry.city">City</span></dt>
+          <dd>
+            <span>{{ workExperienceEntry.city }}</span>
+          </dd>
+          <dt><span jhiTranslate="interviewme6App.workExperienceEntry.personalDetail">Personal Detail</span></dt>
+          <dd>
+            @if (workExperienceEntry.personalDetail) {
+              <div>
+                <a [routerLink]="['/personal-detail', workExperienceEntry.personalDetail.id, 'view']">{{
+                  workExperienceEntry.personalDetail.id
+                }}</a>
+              </div>
+            }
+          </dd>
+        </dl>
+
+        <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+          <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+        </button>
+
+        <button type="button" [routerLink]="['/work-experience-entry', workExperienceEntry.id, 'edit']" class="btn btn-primary">
+          <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+        </button>
+      </div>
+    }
+  </div>
+</div>

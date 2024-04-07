@@ -1,0 +1,70 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    @if (appointment) {
+      <div>
+        <h2 data-cy="appointmentDetailsHeading"><span>Appointment</span></h2>
+
+        <hr />
+
+        <jhi-alert-error></jhi-alert-error>
+
+        <jhi-alert></jhi-alert>
+
+        <dl class="row-md jh-entity-details">
+          <dt><span>ID</span></dt>
+          <dd>
+            <span>{{ appointment.id }}</span>
+          </dd>
+          <dt><span>Status</span></dt>
+          <dd>
+            <span>{{ appointment.status }}</span>
+          </dd>
+          <dt><span>Year</span></dt>
+          <dd>
+            <span>{{ appointment.year }}</span>
+          </dd>
+          <dt><span>Month</span></dt>
+          <dd>
+            <span>{{ appointment.month }}</span>
+          </dd>
+          <dt><span>Day</span></dt>
+          <dd>
+            <span>{{ appointment.day }}</span>
+          </dd>
+          <dt><span>Slot</span></dt>
+          <dd>
+            <span>{{ appointment.slot }}</span>
+          </dd>
+          <dt><span>Appointment Uid</span></dt>
+          <dd>
+            <span>{{ appointment.appointmentUid }}</span>
+          </dd>
+          <dt><span>Interviewer</span></dt>
+          <dd>
+            @if (appointment.interviewer) {
+              <div>
+                <a [routerLink]="['/interviewer', appointment.interviewer.id, 'view']">{{ appointment.interviewer.id }}</a>
+              </div>
+            }
+          </dd>
+          <dt><span>Interviewee</span></dt>
+          <dd>
+            @if (appointment.interviewee) {
+              <div>
+                <a [routerLink]="['/interviewee', appointment.interviewee.id, 'view']">{{ appointment.interviewee.id }}</a>
+              </div>
+            }
+          </dd>
+        </dl>
+
+        <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+          <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span>Back</span>
+        </button>
+
+        <button type="button" [routerLink]="['/appointment', appointment.id, 'edit']" class="btn btn-primary">
+          <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span>Edit</span>
+        </button>
+      </div>
+    }
+  </div>
+</div>

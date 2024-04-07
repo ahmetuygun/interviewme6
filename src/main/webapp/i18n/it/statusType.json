@@ -1,0 +1,12 @@
+{
+  "interviewme6App": {
+    "StatusType": {
+      "null": "",
+      "PENDING": "PENDING",
+      "CONFIRMED": "CONFIRMED",
+      "CANCELLED": "CANCELLED",
+      "COMPLETED": "COMPLETED",
+      "RESCHEDULED": "RESCHEDULED"
+    }
+  }
+}

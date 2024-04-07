@@ -1,0 +1,28 @@
+{
+  "interviewme6App": {
+    "membershipLevel": {
+      "home": {
+        "title": "Membership Levels",
+        "refreshListLabel": "Siyahını yenilə",
+        "createLabel": "Yeni Membership Level əlavə et",
+        "createOrEditLabel": "Yeni Membership Level əlavə et və ya yenilə",
+        "notFound": "Membership Levels məlumatı tapılmadı"
+      },
+      "created": "{{ param }} ID ilə bir Membership Level əlavə edildi",
+      "updated": "{{ param }} nolu Membership Level dəyişildi",
+      "deleted": "{{ param }} nolu Membership Level silindi",
+      "delete": {
+        "question": "{{ id }} nolu Membership Level silinəcək. Davam etmək istəyirsiniz?"
+      },
+      "detail": {
+        "title": "Membership Level"
+      },
+      "id": "ID",
+      "name": "Name",
+      "description": "Description",
+      "sessionAmount": "Session Amount",
+      "price": "Price",
+      "interviewee": "Interviewee"
+    }
+  }
+}

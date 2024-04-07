@@ -1,0 +1,26 @@
+{
+  "interviewme6App": {
+    "skill": {
+      "home": {
+        "title": "Skills",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Skapa en ny Skill",
+        "createOrEditLabel": "Skapa eller ändra en Skill",
+        "notFound": "No Skills found"
+      },
+      "created": "En ny Skill är skapad med id {{ param }}",
+      "updated": "En Skill är uppdaterad med id  {{ param }}",
+      "deleted": "En Skill är borttagen med id  {{ param }}",
+      "delete": {
+        "question": "Är du säker på att du vill ta bort Skill {{ id }}?"
+      },
+      "detail": {
+        "title": "Skill"
+      },
+      "id": "ID",
+      "name": "Name",
+      "type": "Type",
+      "personalDetail": "Personal Detail"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "interviewme6App": {
+    "membershipLevel": {
+      "home": {
+        "title": "Membership Levels",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Maak een nieuwe Membership Level",
+        "createOrEditLabel": "Maak of wijzig een Membership Level",
+        "notFound": "No Membership Levels found"
+      },
+      "created": "A new Membership Level is created with identifier {{ param }}",
+      "updated": "A Membership Level is updated with identifier {{ param }}",
+      "deleted": "A Membership Level is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Bent u zeker dat u Membership Level {{ id }} wilt verwijderen?"
+      },
+      "detail": {
+        "title": "Membership Level"
+      },
+      "id": "ID",
+      "name": "Name",
+      "description": "Description",
+      "sessionAmount": "Session Amount",
+      "price": "Price",
+      "interviewee": "Interviewee"
+    }
+  }
+}

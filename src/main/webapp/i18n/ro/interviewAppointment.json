@@ -1,0 +1,29 @@
+{
+  "interviewme6App": {
+    "interviewAppointment": {
+      "home": {
+        "title": "Interview Appointments",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Creeare o nouă entitate Interview Appointment",
+        "createOrEditLabel": "Creeare sau editare Interview Appointment",
+        "notFound": "No Interview Appointments found"
+      },
+      "created": "A fost creată o nouă entitate Interview Appointment cu identificatorul {{ param }}",
+      "updated": "Interview Appointment cu identificatorul {{ param }} a fost actualizată",
+      "deleted": "Interview Appointment cu identificatorul {{ param }} a fost ștearsă",
+      "delete": {
+        "question": "Sunteți sigur că doriți să ștergeți Interview Appointment {{ id }}?"
+      },
+      "detail": {
+        "title": "Interview Appointment"
+      },
+      "id": "ID",
+      "startTime": "Start Time",
+      "endTime": "End Time",
+      "googleMeetUrl": "Google Meet Url",
+      "status": "Status",
+      "interviewer": "Interviewer",
+      "interviewee": "Interviewee"
+    }
+  }
+}

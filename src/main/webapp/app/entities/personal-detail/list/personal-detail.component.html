@@ -1,0 +1,374 @@
+<div>
+  <h2 id="page-heading" data-cy="PersonalDetailHeading">
+    <span jhiTranslate="interviewme6App.personalDetail.home.title">Personal Details</span>
+
+    <div class="d-flex justify-content-end">
+      <button class="btn btn-info me-2" (click)="load()" [disabled]="isLoading">
+        <fa-icon icon="sync" [spin]="isLoading"></fa-icon>
+        <span jhiTranslate="interviewme6App.personalDetail.home.refreshListLabel">Refresh list</span>
+      </button>
+
+      <button
+        id="jh-create-entity"
+        data-cy="entityCreateButton"
+        class="btn btn-primary jh-create-entity create-personal-detail"
+        [routerLink]="['/personal-detail/new']"
+      >
+        <fa-icon icon="plus"></fa-icon>
+        <span jhiTranslate="interviewme6App.personalDetail.home.createLabel">Create a new Personal Detail</span>
+      </button>
+    </div>
+  </h2>
+
+  <jhi-alert-error></jhi-alert-error>
+
+  <jhi-alert></jhi-alert>
+
+  <jhi-filter [filters]="filters"></jhi-filter>
+
+  @if (personalDetails?.length === 0) {
+    <div class="alert alert-warning" id="no-result">
+      <span jhiTranslate="interviewme6App.personalDetail.home.notFound">No Personal Details found</span>
+    </div>
+  }
+
+  @if (personalDetails && personalDetails.length > 0) {
+    <div class="table-responsive table-entities" id="entities">
+      <table class="table table-striped" aria-describedby="page-heading">
+        <thead>
+          <tr jhiSort [(predicate)]="predicate" [(ascending)]="ascending" (sortChange)="navigateToWithComponentValues()">
+            <th scope="col" jhiSortBy="id">
+              <div class="d-flex">
+                <span jhiTranslate="global.field.id">ID</span>
+
+                <fa-icon class="p-1" icon="sort"></fa-icon>
+              </div>
+            </th>
+            <th scope="col" jhiSortBy="cv">
+              <div class="d-flex">
+                <span jhiTranslate="interviewme6App.personalDetail.cv">Cv</span>
+
+                <fa-icon class="p-1" icon="sort"></fa-icon>
+              </div>
+            </th>
+            <th scope="col" jhiSortBy="firstName">
+              <div class="d-flex">
+                <span jhiTranslate="interviewme6App.personalDetail.firstName">First Name</span>
+
+                <fa-icon class="p-1" icon="sort"></fa-icon>
+              </div>
+            </th>
+            <th scope="col" jhiSortBy="lastName">
+              <div class="d-flex">
+                <span jhiTranslate="interviewme6App.personalDetail.lastName">Last Name</span>
+
+                <fa-icon class="p-1" icon="sort"></fa-icon>
+              </div>
+            </th>
+            <th scope="col" jhiSortBy="rawName">
+              <div class="d-flex">
+                <span jhiTranslate="interviewme6App.personalDetail.rawName">Raw Name</span>
+
+                <fa-icon class="p-1" icon="sort"></fa-icon>
+              </div>
+            </th>
+            <th scope="col" jhiSortBy="middle">
+              <div class="d-flex">
+                <span jhiTranslate="interviewme6App.personalDetail.middle">Middle</span>
+
+                <fa-icon class="p-1" icon="sort"></fa-icon>
+              </div>
+            </th>
+            <th scope="col" jhiSortBy="title">
+              <div class="d-flex">
+                <span jhiTranslate="interviewme6App.personalDetail.title">Title</span>
+
+                <fa-icon class="p-1" icon="sort"></fa-icon>
+              </div>
+            </th>
+            <th scope="col" jhiSortBy="prefix">
+              <div class="d-flex">
+                <span jhiTranslate="interviewme6App.personalDetail.prefix">Prefix</span>
+
+                <fa-icon class="p-1" icon="sort"></fa-icon>
+              </div>
+            </th>
+            <th scope="col" jhiSortBy="suffix">
+              <div class="d-flex">
+                <span jhiTranslate="interviewme6App.personalDetail.suffix">Suffix</span>
+
+                <fa-icon class="p-1" icon="sort"></fa-icon>
+              </div>
+            </th>
+            <th scope="col" jhiSortBy="formattedLocation">
+              <div class="d-flex">
+                <span jhiTranslate="interviewme6App.personalDetail.formattedLocation">Formatted Location</span>
+
+                <fa-icon class="p-1" icon="sort"></fa-icon>
+              </div>
+            </th>
+            <th scope="col" jhiSortBy="postalCode">
+              <div class="d-flex">
+                <span jhiTranslate="interviewme6App.personalDetail.postalCode">Postal Code</span>
+
+                <fa-icon class="p-1" icon="sort"></fa-icon>
+              </div>
+            </th>
+            <th scope="col" jhiSortBy="region">
+              <div class="d-flex">
+                <span jhiTranslate="interviewme6App.personalDetail.region">Region</span>
+
+                <fa-icon class="p-1" icon="sort"></fa-icon>
+              </div>
+            </th>
+            <th scope="col" jhiSortBy="country">
+              <div class="d-flex">
+                <span jhiTranslate="interviewme6App.personalDetail.country">Country</span>
+
+                <fa-icon class="p-1" icon="sort"></fa-icon>
+              </div>
+            </th>
+            <th scope="col" jhiSortBy="countryCode">
+              <div class="d-flex">
+                <span jhiTranslate="interviewme6App.personalDetail.countryCode">Country Code</span>
+
+                <fa-icon class="p-1" icon="sort"></fa-icon>
+              </div>
+            </th>
+            <th scope="col" jhiSortBy="rawInputLocation">
+              <div class="d-flex">
+                <span jhiTranslate="interviewme6App.personalDetail.rawInputLocation">Raw Input Location</span>
+
+                <fa-icon class="p-1" icon="sort"></fa-icon>
+              </div>
+            </th>
+            <th scope="col" jhiSortBy="street">
+              <div class="d-flex">
+                <span jhiTranslate="interviewme6App.personalDetail.street">Street</span>
+
+                <fa-icon class="p-1" icon="sort"></fa-icon>
+              </div>
+            </th>
+            <th scope="col" jhiSortBy="streetNumber">
+              <div class="d-flex">
+                <span jhiTranslate="interviewme6App.personalDetail.streetNumber">Street Number</span>
+
+                <fa-icon class="p-1" icon="sort"></fa-icon>
+              </div>
+            </th>
+            <th scope="col" jhiSortBy="apartmentNumber">
+              <div class="d-flex">
+                <span jhiTranslate="interviewme6App.personalDetail.apartmentNumber">Apartment Number</span>
+
+                <fa-icon class="p-1" icon="sort"></fa-icon>
+              </div>
+            </th>
+            <th scope="col" jhiSortBy="city">
+              <div class="d-flex">
+                <span jhiTranslate="interviewme6App.personalDetail.city">City</span>
+
+                <fa-icon class="p-1" icon="sort"></fa-icon>
+              </div>
+            </th>
+            <th scope="col" jhiSortBy="selfSummary">
+              <div class="d-flex">
+                <span jhiTranslate="interviewme6App.personalDetail.selfSummary">Self Summary</span>
+
+                <fa-icon class="p-1" icon="sort"></fa-icon>
+              </div>
+            </th>
+            <th scope="col" jhiSortBy="objective">
+              <div class="d-flex">
+                <span jhiTranslate="interviewme6App.personalDetail.objective">Objective</span>
+
+                <fa-icon class="p-1" icon="sort"></fa-icon>
+              </div>
+            </th>
+            <th scope="col" jhiSortBy="dateOfBirth">
+              <div class="d-flex">
+                <span jhiTranslate="interviewme6App.personalDetail.dateOfBirth">Date Of Birth</span>
+
+                <fa-icon class="p-1" icon="sort"></fa-icon>
+              </div>
+            </th>
+            <th scope="col" jhiSortBy="placeOfBirth">
+              <div class="d-flex">
+                <span jhiTranslate="interviewme6App.personalDetail.placeOfBirth">Place Of Birth</span>
+
+                <fa-icon class="p-1" icon="sort"></fa-icon>
+              </div>
+            </th>
+            <th scope="col" jhiSortBy="phones">
+              <div class="d-flex">
+                <span jhiTranslate="interviewme6App.personalDetail.phones">Phones</span>
+
+                <fa-icon class="p-1" icon="sort"></fa-icon>
+              </div>
+            </th>
+            <th scope="col" jhiSortBy="mails">
+              <div class="d-flex">
+                <span jhiTranslate="interviewme6App.personalDetail.mails">Mails</span>
+
+                <fa-icon class="p-1" icon="sort"></fa-icon>
+              </div>
+            </th>
+            <th scope="col" jhiSortBy="urls">
+              <div class="d-flex">
+                <span jhiTranslate="interviewme6App.personalDetail.urls">Urls</span>
+
+                <fa-icon class="p-1" icon="sort"></fa-icon>
+              </div>
+            </th>
+            <th scope="col" jhiSortBy="currentProfession">
+              <div class="d-flex">
+                <span jhiTranslate="interviewme6App.personalDetail.currentProfession">Current Profession</span>
+
+                <fa-icon class="p-1" icon="sort"></fa-icon>
+              </div>
+            </th>
+            <th scope="col" jhiSortBy="gender">
+              <div class="d-flex">
+                <span jhiTranslate="interviewme6App.personalDetail.gender">Gender</span>
+
+                <fa-icon class="p-1" icon="sort"></fa-icon>
+              </div>
+            </th>
+            <th scope="col" jhiSortBy="nationality">
+              <div class="d-flex">
+                <span jhiTranslate="interviewme6App.personalDetail.nationality">Nationality</span>
+
+                <fa-icon class="p-1" icon="sort"></fa-icon>
+              </div>
+            </th>
+            <th scope="col" jhiSortBy="martialStatus">
+              <div class="d-flex">
+                <span jhiTranslate="interviewme6App.personalDetail.martialStatus">Martial Status</span>
+
+                <fa-icon class="p-1" icon="sort"></fa-icon>
+              </div>
+            </th>
+            <th scope="col" jhiSortBy="currentSalary">
+              <div class="d-flex">
+                <span jhiTranslate="interviewme6App.personalDetail.currentSalary">Current Salary</span>
+
+                <fa-icon class="p-1" icon="sort"></fa-icon>
+              </div>
+            </th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          @for (personalDetail of personalDetails; track trackId) {
+            <tr data-cy="entityTable">
+
+              <td>{{ personalDetail.firstName }}</td>
+              <td>{{ personalDetail.lastName }}</td>
+              <td>{{ personalDetail.rawName }}</td>
+              <td>{{ personalDetail.middle }}</td>
+              <td>{{ personalDetail.title }}</td>
+              <td>{{ personalDetail.prefix }}</td>
+              <td>{{ personalDetail.suffix }}</td>
+              <td>{{ personalDetail.formattedLocation }}</td>
+              <td>{{ personalDetail.postalCode }}</td>
+              <td>{{ personalDetail.region }}</td>
+              <td>{{ personalDetail.country }}</td>
+              <td>{{ personalDetail.countryCode }}</td>
+              <td>{{ personalDetail.rawInputLocation }}</td>
+              <td>{{ personalDetail.street }}</td>
+              <td>{{ personalDetail.streetNumber }}</td>
+              <td>{{ personalDetail.apartmentNumber }}</td>
+              <td>{{ personalDetail.city }}</td>
+              <td>{{ personalDetail.selfSummary }}</td>
+              <td>{{ personalDetail.objective }}</td>
+              <td>{{ personalDetail.dateOfBirth | formatMediumDatetime }}</td>
+              <td>{{ personalDetail.placeOfBirth }}</td>
+              <td>{{ personalDetail.phones }}</td>
+              <td>{{ personalDetail.mails }}</td>
+              <td>{{ personalDetail.urls }}</td>
+              <td>{{ personalDetail.currentProfession }}</td>
+              <td>{{ personalDetail.gender }}</td>
+              <td>{{ personalDetail.nationality }}</td>
+              <td>{{ personalDetail.martialStatus }}</td>
+              <td>{{ personalDetail.currentSalary }}</td>
+              <td class="text-end">
+                <div class="btn-group">
+                  <button
+                    type="submit"
+                    [routerLink]="['/work-experience-entry']"
+                    [queryParams]="{ 'filter[personalDetailId.in]': personalDetail.id }"
+                    class="btn btn-info btn-sm"
+                    data-cy="filterOtherEntityButton"
+                  >
+                    <fa-icon icon="eye"></fa-icon>
+                    <span
+                      class="d-none d-md-inline"
+                      jhiTranslate="entity.action.show"
+                      [translateValues]="{ otherEntity: ('interviewme6App.personalDetail.work' | translate) }"
+                      >Show Work Experience Entry</span
+                    >
+                  </button>
+                  <button
+                    type="submit"
+                    [routerLink]="['/education-entry']"
+                    [queryParams]="{ 'filter[personalDetailId.in]': personalDetail.id }"
+                    class="btn btn-info btn-sm"
+                    data-cy="filterOtherEntityButton"
+                  >
+                    <fa-icon icon="eye"></fa-icon>
+                    <span
+                      class="d-none d-md-inline"
+                      jhiTranslate="entity.action.show"
+                      [translateValues]="{ otherEntity: ('interviewme6App.personalDetail.education' | translate) }"
+                      >Show Education Entry</span
+                    >
+                  </button>
+                  <a
+                    [routerLink]="['/personal-detail', personalDetail.id, 'view']"
+                    class="btn btn-info btn-sm"
+                    data-cy="entityDetailsButton"
+                  >
+                    <fa-icon icon="eye"></fa-icon>
+                    <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+                  </a>
+
+                  <a
+                    [routerLink]="['/personal-detail', personalDetail.id, 'edit']"
+                    class="btn btn-primary btn-sm"
+                    data-cy="entityEditButton"
+                  >
+                    <fa-icon icon="pencil-alt"></fa-icon>
+                    <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+                  </a>
+
+                  <button type="submit" (click)="delete(personalDetail)" class="btn btn-danger btn-sm" data-cy="entityDeleteButton">
+                    <fa-icon icon="times"></fa-icon>
+                    <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+                  </button>
+                </div>
+              </td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+  }
+  @if (personalDetails && personalDetails.length > 0) {
+    <div>
+      <div class="d-flex justify-content-center">
+        <jhi-item-count [params]="{ page: page, totalItems: totalItems, itemsPerPage: itemsPerPage }"></jhi-item-count>
+      </div>
+
+      <div class="d-flex justify-content-center">
+        <ngb-pagination
+          [collectionSize]="totalItems"
+          [page]="page"
+          [pageSize]="itemsPerPage"
+          [maxSize]="5"
+          [rotate]="true"
+          [boundaryLinks]="true"
+          (pageChange)="navigateToPage($event)"
+        ></ngb-pagination>
+      </div>
+    </div>
+  }
+</div>

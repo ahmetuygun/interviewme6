@@ -1,0 +1,26 @@
+{
+  "interviewme6App": {
+    "skill": {
+      "home": {
+        "title": "Skills",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Δημιουργήστε ένα νέο Skill",
+        "createOrEditLabel": "Δημιουργήστε η επεξεργαστείτε ένα Skill",
+        "notFound": "No Skills found"
+      },
+      "created": "Ένα νέο Skill έχει δημιουργηθεί με αναγνωριστικό {{ param }}",
+      "updated": "Ένα Skill έχει ενημερωθεί με αναγνωριστικό {{ param }}",
+      "deleted": "Ένα Skill έχει διαγραφτεί με αναγνωριστικό {{ param }}",
+      "delete": {
+        "question": "Είστε βέβαιοι όταν θέλετε να διαγράψετε το ακόλουθο Skill {{ id }};"
+      },
+      "detail": {
+        "title": "Skill"
+      },
+      "id": "ID",
+      "name": "Name",
+      "type": "Type",
+      "personalDetail": "Personal Detail"
+    }
+  }
+}

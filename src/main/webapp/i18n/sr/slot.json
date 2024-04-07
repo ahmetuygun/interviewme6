@@ -1,0 +1,26 @@
+{
+  "interviewme6App": {
+    "slot": {
+      "home": {
+        "title": "Slots",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Kreiraj novi Slot",
+        "createOrEditLabel": "Kreirajte ili izmenite Slot",
+        "notFound": "No Slots found"
+      },
+      "created": "Kreiran je novi Slot pod nazivom {{ param }}",
+      "updated": "Slot pod nazivom {{ param }} je ažuriran",
+      "deleted": "Slot pod nazivom {{ param }} je obrisan",
+      "delete": {
+        "question": "Da li ste sigurni da želite da obrišete Slot pod nazivom {{ id }}?"
+      },
+      "detail": {
+        "title": "Slot"
+      },
+      "id": "ID",
+      "slot": "Slot",
+      "isAvailable": "Is Available",
+      "interviewer": "Interviewer"
+    }
+  }
+}

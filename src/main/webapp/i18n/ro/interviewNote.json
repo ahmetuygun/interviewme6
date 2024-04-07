@@ -1,0 +1,27 @@
+{
+  "interviewme6App": {
+    "interviewNote": {
+      "home": {
+        "title": "Interview Notes",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Creeare o nouă entitate Interview Note",
+        "createOrEditLabel": "Creeare sau editare Interview Note",
+        "notFound": "No Interview Notes found"
+      },
+      "created": "A fost creată o nouă entitate Interview Note cu identificatorul {{ param }}",
+      "updated": "Interview Note cu identificatorul {{ param }} a fost actualizată",
+      "deleted": "Interview Note cu identificatorul {{ param }} a fost ștearsă",
+      "delete": {
+        "question": "Sunteți sigur că doriți să ștergeți Interview Note {{ id }}?"
+      },
+      "detail": {
+        "title": "Interview Note"
+      },
+      "id": "ID",
+      "noteText": "Note Text",
+      "rating": "Rating",
+      "actionItems": "Action Items",
+      "feedback": "Feedback"
+    }
+  }
+}

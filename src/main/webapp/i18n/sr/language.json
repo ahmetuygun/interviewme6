@@ -1,0 +1,27 @@
+{
+  "interviewme6App": {
+    "language": {
+      "home": {
+        "title": "Languages",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Kreiraj novi Language",
+        "createOrEditLabel": "Kreirajte ili izmenite Language",
+        "notFound": "No Languages found"
+      },
+      "created": "Kreiran je novi Language pod nazivom {{ param }}",
+      "updated": "Language pod nazivom {{ param }} je ažuriran",
+      "deleted": "Language pod nazivom {{ param }} je obrisan",
+      "delete": {
+        "question": "Da li ste sigurni da želite da obrišete Language pod nazivom {{ id }}?"
+      },
+      "detail": {
+        "title": "Language"
+      },
+      "id": "ID",
+      "name": "Name",
+      "code": "Code",
+      "isNative": "Is Native",
+      "personalDetail": "Personal Detail"
+    }
+  }
+}

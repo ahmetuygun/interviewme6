@@ -1,0 +1,26 @@
+{
+  "interviewme6App": {
+    "slot": {
+      "home": {
+        "title": "Slots",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Vytvořit Slot",
+        "createOrEditLabel": "Vytvořit nebo upravit Slot",
+        "notFound": "No Slots found"
+      },
+      "created": "Byl vytvořen potomek entity Slot s identifikátorem {{ param }}",
+      "updated": "Potomek entity Slot s identifikátorem {{ param }} byl upravený.",
+      "deleted": "Potomek entity Slot s identifikátorem {{ param }} bol smazaný.",
+      "delete": {
+        "question": "Jste si jisti, že chcete smazat Slot {{ id }}?"
+      },
+      "detail": {
+        "title": "Slot"
+      },
+      "id": "ID",
+      "slot": "Slot",
+      "isAvailable": "Is Available",
+      "interviewer": "Interviewer"
+    }
+  }
+}

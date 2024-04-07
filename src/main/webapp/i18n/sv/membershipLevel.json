@@ -1,0 +1,28 @@
+{
+  "interviewme6App": {
+    "membershipLevel": {
+      "home": {
+        "title": "Membership Levels",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Skapa en ny Membership Level",
+        "createOrEditLabel": "Skapa eller ändra en Membership Level",
+        "notFound": "No Membership Levels found"
+      },
+      "created": "En ny Membership Level är skapad med id {{ param }}",
+      "updated": "En Membership Level är uppdaterad med id  {{ param }}",
+      "deleted": "En Membership Level är borttagen med id  {{ param }}",
+      "delete": {
+        "question": "Är du säker på att du vill ta bort Membership Level {{ id }}?"
+      },
+      "detail": {
+        "title": "Membership Level"
+      },
+      "id": "ID",
+      "name": "Name",
+      "description": "Description",
+      "sessionAmount": "Session Amount",
+      "price": "Price",
+      "interviewee": "Interviewee"
+    }
+  }
+}

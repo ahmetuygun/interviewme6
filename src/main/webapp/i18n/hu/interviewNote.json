@@ -1,0 +1,27 @@
+{
+  "interviewme6App": {
+    "interviewNote": {
+      "home": {
+        "title": "InterviewNotes",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Egy új Interview Note létrehozása",
+        "createOrEditLabel": "Hozzon létre, vagy módosítson Interview Notet",
+        "notFound": "No Interview Notes found"
+      },
+      "created": "Egy új Interview Note lett létrehozva {{ param }} azonosítóval",
+      "updated": "A Interview Note módosítva lett {{ param }} azonosítóval",
+      "deleted": "A Interview Note törölve lett {{ param }} azonosítóval",
+      "delete": {
+        "question": "Biztos benne, hogy törölni szeretné az Interview Notet {{ id }} azonosítóval?"
+      },
+      "detail": {
+        "title": "Interview Note"
+      },
+      "id": "ID",
+      "noteText": "Note Text",
+      "rating": "Rating",
+      "actionItems": "Action Items",
+      "feedback": "Feedback"
+    }
+  }
+}

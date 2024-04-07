@@ -1,0 +1,29 @@
+{
+  "interviewme6App": {
+    "interviewAppointment": {
+      "home": {
+        "title": "Interview Appointments",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Създайте нов Interview Appointment",
+        "createOrEditLabel": "Създайте или редактирайте Interview Appointment",
+        "notFound": "Interview Appointments не са намерени"
+      },
+      "created": "Създаден е нов Interview Appointment с идентификатор {{ param }}",
+      "updated": "Interview Appointment с идентификатор {{ param }} e oбновен",
+      "deleted": "Interview Appointment с идентификатор {{ param }} е изтрит",
+      "delete": {
+        "question": "Наистина ли искате да изтриете Interview Appointment {{ id }}?"
+      },
+      "detail": {
+        "title": "Interview Appointment"
+      },
+      "id": "ID",
+      "startTime": "Start Time",
+      "endTime": "End Time",
+      "googleMeetUrl": "Google Meet Url",
+      "status": "Status",
+      "interviewer": "Interviewer",
+      "interviewee": "Interviewee"
+    }
+  }
+}

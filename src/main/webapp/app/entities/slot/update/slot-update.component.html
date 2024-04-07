@@ -1,0 +1,60 @@
+<div class="d-flex justify-content-center">
+  <div class="col-12">
+    <form name="editForm" role="form" novalidate (ngSubmit)="save()" [formGroup]="editForm">
+      <h2 id="jhi-slot-heading" data-cy="SlotCreateUpdateHeading" jhiTranslate="interviewme6App.slot.home.createOrEditLabel">
+        Create or edit a Slot
+      </h2>
+
+      <div>
+        <jhi-alert-error></jhi-alert-error>
+
+
+
+        <div class="container py-5">
+          <div class="row">
+            <div class="col-md-4">
+              <ngb-datepicker
+                (dateSelect)="onDateSelection($event)"
+                [minDate]="minDate"
+                [maxDate]="maxDate"
+              ></ngb-datepicker>
+            </div>
+
+            <div class="col-md-6" *ngIf="timeSlots.length > 0">
+              <h3>Slots:</h3>
+              <div class="row">
+                <div class="col-md-2" *ngFor="let slot of timeSlots">
+                  <button type="button"
+                          (click)="selectSlot(slot)"
+                          class="btn m-1 custom-slot"
+                          [class.btn-outline-primary]="!isSlotSelected(slot)"
+                          [class.btn-primary]="isSlotSelected(slot)">
+                    {{ slot }}
+                  </button>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+      <div class="d-flex justify-content-end"> <!-- Use flex utilities to align items to the end -->
+
+        <button
+          type="submit"
+          id="save-entity"
+          data-cy="entityCreateSaveButton"
+          [disabled]="editForm.invalid || isSaving"
+          class="btn btn-primary"
+        >
+          <fa-icon icon="save"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

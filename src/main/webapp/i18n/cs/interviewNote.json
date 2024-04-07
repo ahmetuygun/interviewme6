@@ -1,0 +1,27 @@
+{
+  "interviewme6App": {
+    "interviewNote": {
+      "home": {
+        "title": "Interview Notes",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Vytvořit Interview Note",
+        "createOrEditLabel": "Vytvořit nebo upravit Interview Note",
+        "notFound": "No Interview Notes found"
+      },
+      "created": "Byl vytvořen potomek entity Interview Note s identifikátorem {{ param }}",
+      "updated": "Potomek entity Interview Note s identifikátorem {{ param }} byl upravený.",
+      "deleted": "Potomek entity Interview Note s identifikátorem {{ param }} bol smazaný.",
+      "delete": {
+        "question": "Jste si jisti, že chcete smazat Interview Note {{ id }}?"
+      },
+      "detail": {
+        "title": "Interview Note"
+      },
+      "id": "ID",
+      "noteText": "Note Text",
+      "rating": "Rating",
+      "actionItems": "Action Items",
+      "feedback": "Feedback"
+    }
+  }
+}

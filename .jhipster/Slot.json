@@ -1,0 +1,31 @@
+{
+  "annotations": {
+    "changelogDate": "20240127201825"
+  },
+  "applications": "*",
+  "entityTableName": "slot",
+  "fields": [
+    {
+      "fieldName": "slot",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "isAvailable",
+      "fieldType": "Boolean"
+    }
+  ],
+  "jpaMetamodelFiltering": true,
+  "name": "Slot",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "interviewer",
+      "otherEntityRelationshipName": "slots",
+      "relationshipName": "interviewer",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

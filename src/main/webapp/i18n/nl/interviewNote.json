@@ -1,0 +1,27 @@
+{
+  "interviewme6App": {
+    "interviewNote": {
+      "home": {
+        "title": "Interview Notes",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Maak een nieuwe Interview Note",
+        "createOrEditLabel": "Maak of wijzig een Interview Note",
+        "notFound": "No Interview Notes found"
+      },
+      "created": "A new Interview Note is created with identifier {{ param }}",
+      "updated": "A Interview Note is updated with identifier {{ param }}",
+      "deleted": "A Interview Note is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Bent u zeker dat u Interview Note {{ id }} wilt verwijderen?"
+      },
+      "detail": {
+        "title": "Interview Note"
+      },
+      "id": "ID",
+      "noteText": "Note Text",
+      "rating": "Rating",
+      "actionItems": "Action Items",
+      "feedback": "Feedback"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "interviewme6App": {
+    "interviewer": {
+      "home": {
+        "title": "Interviewers",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Δημιουργήστε ένα νέο Interviewer",
+        "createOrEditLabel": "Δημιουργήστε η επεξεργαστείτε ένα Interviewer",
+        "notFound": "No Interviewers found"
+      },
+      "created": "Ένα νέο Interviewer έχει δημιουργηθεί με αναγνωριστικό {{ param }}",
+      "updated": "Ένα Interviewer έχει ενημερωθεί με αναγνωριστικό {{ param }}",
+      "deleted": "Ένα Interviewer έχει διαγραφτεί με αναγνωριστικό {{ param }}",
+      "delete": {
+        "question": "Είστε βέβαιοι όταν θέλετε να διαγράψετε το ακόλουθο Interviewer {{ id }};"
+      },
+      "detail": {
+        "title": "Interviewer"
+      },
+      "id": "ID",
+      "photo": "Photo",
+      "internalUser": "Internal User",
+      "personalDetail": "Personal Detail",
+      "subjects": "Subjects",
+      "slots": "Slots",
+      "appointment": "Appointment"
+    }
+  }
+}

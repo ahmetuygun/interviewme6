@@ -1,0 +1,280 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:pro="http://www.liquibase.org/xml/ns/pro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-latest.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <changeSet author="ahmetuygun (generated)" id="1706479225894-1">
+        <createTable tableName="interview_appointment">
+            <column name="end_time" type="TIMESTAMP WITHOUT TIME ZONE"/>
+            <column name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="interview_appointment_pkey"/>
+            </column>
+            <column name="interviewee_id" type="BIGINT"/>
+            <column name="interviewer_id" type="BIGINT"/>
+            <column name="start_time" type="TIMESTAMP WITHOUT TIME ZONE"/>
+            <column name="google_meet_url" type="VARCHAR(255)"/>
+            <column name="status" type="VARCHAR(255)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="ahmetuygun (generated)" id="1706479225894-2">
+        <createTable tableName="interview_subject">
+            <column name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="interview_subject_pkey"/>
+            </column>
+            <column name="interviewer_id" type="BIGINT"/>
+            <column name="name" type="VARCHAR(255)"/>
+            <column name="parent" type="VARCHAR(255)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="ahmetuygun (generated)" id="1706479225894-3">
+        <createTable tableName="interviewee">
+            <column name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="interviewee_pkey"/>
+            </column>
+            <column name="internal_user_id" type="BIGINT"/>
+            <column name="membership_id" type="BIGINT"/>
+            <column name="personal_detail_id" type="BIGINT"/>
+            <column name="photo_content_type" type="VARCHAR(255)"/>
+            <column name="photo" type="OID"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="ahmetuygun (generated)" id="1706479225894-4">
+        <createTable tableName="interviewer">
+            <column name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="interviewer_pkey"/>
+            </column>
+            <column name="internal_user_id" type="BIGINT"/>
+            <column name="personal_detail_id" type="BIGINT"/>
+            <column name="cv_content_type" type="VARCHAR(255)"/>
+            <column name="first_name" type="VARCHAR(255)"/>
+            <column name="last_name" type="VARCHAR(255)"/>
+            <column name="mail" type="VARCHAR(255)"/>
+            <column name="photo_content_type" type="VARCHAR(255)"/>
+            <column name="cv" type="OID"/>
+            <column name="photo" type="OID"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="ahmetuygun (generated)" id="1706479225894-5">
+        <createTable tableName="jhi_user">
+            <column name="activated" type="BOOLEAN">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_date" type="TIMESTAMP WITHOUT TIME ZONE"/>
+            <column name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="jhi_user_pkey"/>
+            </column>
+            <column name="last_modified_date" type="TIMESTAMP WITHOUT TIME ZONE"/>
+            <column name="reset_date" type="TIMESTAMP WITHOUT TIME ZONE"/>
+            <column name="lang_key" type="VARCHAR(10)"/>
+            <column name="activation_key" type="VARCHAR(20)"/>
+            <column name="reset_key" type="VARCHAR(20)"/>
+            <column name="created_by" type="VARCHAR(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="first_name" type="VARCHAR(50)"/>
+            <column name="last_modified_by" type="VARCHAR(50)"/>
+            <column name="last_name" type="VARCHAR(50)"/>
+            <column name="login" type="VARCHAR(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="password_hash" type="VARCHAR(60)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="email" type="VARCHAR(254)"/>
+            <column name="image_url" type="VARCHAR(256)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="ahmetuygun (generated)" id="1706479225894-6">
+        <addUniqueConstraint columnNames="name" constraintName="interview_subject_name_key" tableName="interview_subject"/>
+    </changeSet>
+    <changeSet author="ahmetuygun (generated)" id="1706479225894-7">
+        <addUniqueConstraint columnNames="internal_user_id" constraintName="interviewee_internal_user_id_key" tableName="interviewee"/>
+    </changeSet>
+    <changeSet author="ahmetuygun (generated)" id="1706479225894-8">
+        <addUniqueConstraint columnNames="personal_detail_id" constraintName="interviewee_personal_detail_id_key" tableName="interviewee"/>
+    </changeSet>
+    <changeSet author="ahmetuygun (generated)" id="1706479225894-9">
+        <addUniqueConstraint columnNames="internal_user_id" constraintName="interviewer_internal_user_id_key" tableName="interviewer"/>
+    </changeSet>
+    <changeSet author="ahmetuygun (generated)" id="1706479225894-10">
+        <addUniqueConstraint columnNames="personal_detail_id" constraintName="interviewer_personal_detail_id_key" tableName="interviewer"/>
+    </changeSet>
+    <changeSet author="ahmetuygun (generated)" id="1706479225894-11">
+        <addUniqueConstraint columnNames="email" constraintName="jhi_user_email_key" tableName="jhi_user"/>
+    </changeSet>
+    <changeSet author="ahmetuygun (generated)" id="1706479225894-12">
+        <addUniqueConstraint columnNames="login" constraintName="jhi_user_login_key" tableName="jhi_user"/>
+    </changeSet>
+    <changeSet author="ahmetuygun (generated)" id="1706479225894-13">
+        <createSequence cacheSize="1" cycle="false" dataType="bigint" incrementBy="50" maxValue="9223372036854775807" minValue="1" sequenceName="sequence_generator" startValue="1"/>
+    </changeSet>
+    <changeSet author="ahmetuygun (generated)" id="1706479225894-14">
+        <createTable tableName="education_entry">
+            <column name="end_date" type="date"/>
+            <column name="gpa" type="FLOAT8"/>
+            <column name="start_date" type="date"/>
+            <column name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="education_entry_pkey"/>
+            </column>
+            <column name="personal_detail_id" type="BIGINT"/>
+            <column name="accreditation" type="VARCHAR(255)"/>
+            <column name="description" type="VARCHAR(255)"/>
+            <column name="establishment" type="VARCHAR(255)"/>
+            <column name="title" type="VARCHAR(255)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="ahmetuygun (generated)" id="1706479225894-15">
+        <createTable tableName="interview_note">
+            <column name="rating" type="INTEGER"/>
+            <column name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="interview_note_pkey"/>
+            </column>
+            <column name="action_items" type="VARCHAR(255)"/>
+            <column name="feedback" type="VARCHAR(255)"/>
+            <column name="note_text" type="VARCHAR(255)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="ahmetuygun (generated)" id="1706479225894-16">
+        <createTable tableName="jhi_authority">
+            <column name="name" type="VARCHAR(50)">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="jhi_authority_pkey"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="ahmetuygun (generated)" id="1706479225894-17">
+        <createTable tableName="jhi_user_authority">
+            <column name="user_id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="jhi_user_authority_pkey"/>
+            </column>
+            <column name="authority_name" type="VARCHAR(50)">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="jhi_user_authority_pkey"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="ahmetuygun (generated)" id="1706479225894-18">
+        <createTable tableName="language">
+            <column name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="language_pkey"/>
+            </column>
+            <column name="name" type="VARCHAR(255)"/>
+            <column name="code" type="VARCHAR(255)"/>
+            <column name="is_native" type="BOOLEAN"/>
+            <column name="personal_detail_id" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="ahmetuygun (generated)" id="1706479225894-19">
+        <createTable tableName="membership_level">
+            <column name="price" type="FLOAT8"/>
+            <column name="session_amount" type="INTEGER"/>
+            <column name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="membership_level_pkey"/>
+            </column>
+            <column name="description" type="VARCHAR(255)"/>
+            <column name="name" type="VARCHAR(255)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="ahmetuygun (generated)" id="1706479225894-20">
+        <createTable tableName="personal_detail">
+            <column name="current_salary" type="numeric(21, 2)"/>
+            <column name="date_of_birth" type="TIMESTAMP WITHOUT TIME ZONE"/>
+            <column name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="personal_detail_pkey"/>
+            </column>
+            <column name="self_summary" type="VARCHAR(1000)"/>
+            <column name="skills" type="VARCHAR(1000)"/>
+            <column name="city" type="VARCHAR(255)"/>
+            <column name="country" type="VARCHAR(255)"/>
+            <column name="current_profession" type="VARCHAR(255)"/>
+            <column name="cv_content_type" type="VARCHAR(255)"/>
+            <column name="first_name" type="VARCHAR(255)"/>
+            <column name="gender" type="VARCHAR(255)"/>
+            <column name="languages" type="VARCHAR(255)"/>
+            <column name="last_name" type="VARCHAR(255)"/>
+            <column name="mails" type="VARCHAR(255)"/>
+            <column name="phones" type="VARCHAR(255)"/>
+            <column name="place_of_birth" type="VARCHAR(255)"/>
+            <column name="urls" type="VARCHAR(255)"/>
+            <column name="cv" type="OID"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="ahmetuygun (generated)" id="1706479225894-21">
+        <createTable tableName="skill">
+            <column name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="skill_pkey"/>
+            </column>
+            <column name="name" type="VARCHAR(255)"/>
+            <column name="type" type="VARCHAR(255)"/>
+            <column name="personal_detail_id" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="ahmetuygun (generated)" id="1706479225894-22">
+        <createTable tableName="slot">
+            <column name="is_available" type="BOOLEAN"/>
+            <column name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="slot_pkey"/>
+            </column>
+            <column name="interviewer_id" type="BIGINT"/>
+            <column name="slot" type="TIMESTAMP WITHOUT TIME ZONE"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="ahmetuygun (generated)" id="1706479225894-23">
+        <createTable tableName="work_experience_entry">
+            <column name="end_date" type="TIMESTAMP WITHOUT TIME ZONE"/>
+            <column name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="work_experience_entry_pkey"/>
+            </column>
+            <column name="personal_detail_id" type="BIGINT"/>
+            <column name="start_date" type="TIMESTAMP WITHOUT TIME ZONE"/>
+            <column name="apartment_number" type="VARCHAR(255)"/>
+            <column name="city" type="VARCHAR(255)"/>
+            <column name="company" type="VARCHAR(255)"/>
+            <column name="country" type="VARCHAR(255)"/>
+            <column name="country_code" type="VARCHAR(255)"/>
+            <column name="description" type="VARCHAR(255)"/>
+            <column name="formatted_location" type="VARCHAR(255)"/>
+            <column name="industry" type="VARCHAR(255)"/>
+            <column name="postal_code" type="VARCHAR(255)"/>
+            <column name="raw_input_location" type="VARCHAR(255)"/>
+            <column name="region" type="VARCHAR(255)"/>
+            <column name="street" type="VARCHAR(255)"/>
+            <column name="street_number" type="VARCHAR(255)"/>
+            <column name="title" type="VARCHAR(255)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="ahmetuygun (generated)" id="1706479225894-24">
+        <addForeignKeyConstraint baseColumnNames="user_id" baseTableName="jhi_user_authority" constraintName="fk290okww5jujghp4el5i7mgwu0" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="jhi_user" validate="true"/>
+    </changeSet>
+    <changeSet author="ahmetuygun (generated)" id="1706479225894-25">
+        <addForeignKeyConstraint baseColumnNames="authority_name" baseTableName="jhi_user_authority" constraintName="fk4psxl0jtx6nr7rhqbynr6itoc" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="name" referencedTableName="jhi_authority" validate="true"/>
+    </changeSet>
+    <changeSet author="ahmetuygun (generated)" id="1706479225894-26">
+        <addForeignKeyConstraint baseColumnNames="personal_detail_id" baseTableName="work_experience_entry" constraintName="fkahi4bkga3769g92t103au9arn" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="personal_detail" validate="true"/>
+    </changeSet>
+    <changeSet author="ahmetuygun (generated)" id="1706479225894-27">
+        <addForeignKeyConstraint baseColumnNames="internal_user_id" baseTableName="interviewee" constraintName="fkapwkqipfatl0h578bpx7d8ijs" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="jhi_user" validate="true"/>
+    </changeSet>
+    <changeSet author="ahmetuygun (generated)" id="1706479225894-28">
+        <addForeignKeyConstraint baseColumnNames="interviewer_id" baseTableName="interview_appointment" constraintName="fkbojluga344b2rb3euavhkx3yv" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="interviewer" validate="true"/>
+    </changeSet>
+    <changeSet author="ahmetuygun (generated)" id="1706479225894-29">
+        <addForeignKeyConstraint baseColumnNames="membership_id" baseTableName="interviewee" constraintName="fkc2uylhfacvyl83b6kbns6snw1" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="membership_level" validate="true"/>
+    </changeSet>
+    <changeSet author="ahmetuygun (generated)" id="1706479225894-30">
+        <addForeignKeyConstraint baseColumnNames="personal_detail_id" baseTableName="interviewer" constraintName="fkfknx8uwtbfx05eigpx5gad1l6" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="personal_detail" validate="true"/>
+    </changeSet>
+    <changeSet author="ahmetuygun (generated)" id="1706479225894-31">
+        <addForeignKeyConstraint baseColumnNames="interviewer_id" baseTableName="interview_subject" constraintName="fkgpyrj6u94aagktpawbuvkhbwl" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="interviewer" validate="true"/>
+    </changeSet>
+    <changeSet author="ahmetuygun (generated)" id="1706479225894-32">
+        <addForeignKeyConstraint baseColumnNames="personal_detail_id" baseTableName="interviewee" constraintName="fkh5iw63ythrs14bt1pyf7h6j4m" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="personal_detail" validate="true"/>
+    </changeSet>
+    <changeSet author="ahmetuygun (generated)" id="1706479225894-33">
+        <addForeignKeyConstraint baseColumnNames="interviewer_id" baseTableName="slot" constraintName="fkhmebx6fo61k64hkhwva3ua5w5" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="interviewer" validate="true"/>
+    </changeSet>
+    <changeSet author="ahmetuygun (generated)" id="1706479225894-34">
+        <addForeignKeyConstraint baseColumnNames="personal_detail_id" baseTableName="education_entry" constraintName="fklqbsusukvdllwxmhxj21qmuld" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="personal_detail" validate="true"/>
+    </changeSet>
+    <changeSet author="ahmetuygun (generated)" id="1706479225894-35">
+        <addForeignKeyConstraint baseColumnNames="internal_user_id" baseTableName="interviewer" constraintName="fkne328rcrohkuaobwggk14futj" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="jhi_user" validate="true"/>
+    </changeSet>
+    <changeSet author="ahmetuygun (generated)" id="1706479225894-36">
+        <addForeignKeyConstraint baseColumnNames="interviewee_id" baseTableName="interview_appointment" constraintName="fkr91xdnas9vsjsdku5sqn4iql2" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="interviewee" validate="true"/>
+    </changeSet>
+</databaseChangeLog>

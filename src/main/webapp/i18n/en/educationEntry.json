@@ -1,0 +1,31 @@
+{
+  "interviewme6App": {
+    "educationEntry": {
+      "home": {
+        "title": "Education Entries",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Education Entry",
+        "createOrEditLabel": "Create or edit a Education Entry",
+        "notFound": "No Education Entries found"
+      },
+      "created": "A new Education Entry is created with identifier {{ param }}",
+      "updated": "A Education Entry is updated with identifier {{ param }}",
+      "deleted": "A Education Entry is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Education Entry {{ id }}?"
+      },
+      "detail": {
+        "title": "Education Entry"
+      },
+      "id": "ID",
+      "title": "Title",
+      "startDate": "Start Date",
+      "endDate": "End Date",
+      "establishment": "Establishment",
+      "description": "Description",
+      "gpa": "Gpa",
+      "accreditation": "Accreditation",
+      "personalDetail": "Personal Detail"
+    }
+  }
+}

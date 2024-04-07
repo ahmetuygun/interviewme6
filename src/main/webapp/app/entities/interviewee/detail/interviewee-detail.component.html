@@ -1,0 +1,29 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    @if (interviewee) {
+      <div>
+        <h2 data-cy="intervieweeDetailsHeading"><span jhiTranslate="interviewme6App.interviewee.detail.title">Interviewee</span></h2>
+
+        <hr />
+
+        <jhi-alert-error></jhi-alert-error>
+
+        <jhi-alert></jhi-alert>
+
+
+        <div>
+          <jhi-personal-detail-detail
+            [photo]="interviewee.photo"
+            [photoContentType]="interviewee.photoContentType"
+            [personalDetailId]="interviewee.personalDetail?.id"
+            [cv]="interviewee.cv"
+            [cvContentType]="interviewee.cvContentType"
+          ></jhi-personal-detail-detail>
+        </div>
+
+
+
+      </div>
+    }
+  </div>
+</div>

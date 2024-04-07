@@ -1,0 +1,27 @@
+{
+  "interviewme6App": {
+    "language": {
+      "home": {
+        "title": "Languages",
+        "refreshListLabel": "Siyahını yenilə",
+        "createLabel": "Yeni Language əlavə et",
+        "createOrEditLabel": "Yeni Language əlavə et və ya yenilə",
+        "notFound": "Languages məlumatı tapılmadı"
+      },
+      "created": "{{ param }} ID ilə bir Language əlavə edildi",
+      "updated": "{{ param }} nolu Language dəyişildi",
+      "deleted": "{{ param }} nolu Language silindi",
+      "delete": {
+        "question": "{{ id }} nolu Language silinəcək. Davam etmək istəyirsiniz?"
+      },
+      "detail": {
+        "title": "Language"
+      },
+      "id": "ID",
+      "name": "Name",
+      "code": "Code",
+      "isNative": "Is Native",
+      "personalDetail": "Personal Detail"
+    }
+  }
+}

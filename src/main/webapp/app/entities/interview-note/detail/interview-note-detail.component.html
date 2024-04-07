@@ -1,0 +1,46 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    @if (interviewNote) {
+      <div>
+        <h2 data-cy="interviewNoteDetailsHeading"><span jhiTranslate="interviewme6App.interviewNote.detail.title">Interview Note</span></h2>
+
+        <hr />
+
+        <jhi-alert-error></jhi-alert-error>
+
+        <jhi-alert></jhi-alert>
+
+        <dl class="row-md jh-entity-details">
+          <dt><span jhiTranslate="global.field.id">ID</span></dt>
+          <dd>
+            <span>{{ interviewNote.id }}</span>
+          </dd>
+          <dt><span jhiTranslate="interviewme6App.interviewNote.noteText">Note Text</span></dt>
+          <dd>
+            <span>{{ interviewNote.noteText }}</span>
+          </dd>
+          <dt><span jhiTranslate="interviewme6App.interviewNote.rating">Rating</span></dt>
+          <dd>
+            <span>{{ interviewNote.rating }}</span>
+          </dd>
+          <dt><span jhiTranslate="interviewme6App.interviewNote.actionItems">Action Items</span></dt>
+          <dd>
+            <span>{{ interviewNote.actionItems }}</span>
+          </dd>
+          <dt><span jhiTranslate="interviewme6App.interviewNote.feedback">Feedback</span></dt>
+          <dd>
+            <span>{{ interviewNote.feedback }}</span>
+          </dd>
+        </dl>
+
+        <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+          <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+        </button>
+
+        <button type="button" [routerLink]="['/interview-note', interviewNote.id, 'edit']" class="btn btn-primary">
+          <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+        </button>
+      </div>
+    }
+  </div>
+</div>

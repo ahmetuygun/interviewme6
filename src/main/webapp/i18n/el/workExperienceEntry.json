@@ -1,0 +1,40 @@
+{
+  "interviewme6App": {
+    "workExperienceEntry": {
+      "home": {
+        "title": "Work Experience Entries",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Δημιουργήστε ένα νέο Work Experience Entry",
+        "createOrEditLabel": "Δημιουργήστε η επεξεργαστείτε ένα Work Experience Entry",
+        "notFound": "No Work Experience Entries found"
+      },
+      "created": "Ένα νέο Work Experience Entry έχει δημιουργηθεί με αναγνωριστικό {{ param }}",
+      "updated": "Ένα Work Experience Entry έχει ενημερωθεί με αναγνωριστικό {{ param }}",
+      "deleted": "Ένα Work Experience Entry έχει διαγραφτεί με αναγνωριστικό {{ param }}",
+      "delete": {
+        "question": "Είστε βέβαιοι όταν θέλετε να διαγράψετε το ακόλουθο Work Experience Entry {{ id }};"
+      },
+      "detail": {
+        "title": "Work Experience Entry"
+      },
+      "id": "ID",
+      "title": "Title",
+      "startDate": "Start Date",
+      "endDate": "End Date",
+      "company": "Company",
+      "description": "Description",
+      "industry": "Industry",
+      "formattedLocation": "Formatted Location",
+      "postalCode": "Postal Code",
+      "region": "Region",
+      "country": "Country",
+      "countryCode": "Country Code",
+      "rawInputLocation": "Raw Input Location",
+      "street": "Street",
+      "streetNumber": "Street Number",
+      "apartmentNumber": "Apartment Number",
+      "city": "City",
+      "personalDetail": "Personal Detail"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "interviewme6App": {
+    "interviewAppointment": {
+      "home": {
+        "title": "Interview Appointments",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Vytvořit Interview Appointment",
+        "createOrEditLabel": "Vytvořit nebo upravit Interview Appointment",
+        "notFound": "No Interview Appointments found"
+      },
+      "created": "Byl vytvořen potomek entity Interview Appointment s identifikátorem {{ param }}",
+      "updated": "Potomek entity Interview Appointment s identifikátorem {{ param }} byl upravený.",
+      "deleted": "Potomek entity Interview Appointment s identifikátorem {{ param }} bol smazaný.",
+      "delete": {
+        "question": "Jste si jisti, že chcete smazat Interview Appointment {{ id }}?"
+      },
+      "detail": {
+        "title": "Interview Appointment"
+      },
+      "id": "ID",
+      "startTime": "Start Time",
+      "endTime": "End Time",
+      "googleMeetUrl": "Google Meet Url",
+      "status": "Status",
+      "interviewer": "Interviewer",
+      "interviewee": "Interviewee"
+    }
+  }
+}

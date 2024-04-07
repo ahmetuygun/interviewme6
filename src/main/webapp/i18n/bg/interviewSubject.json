@@ -1,0 +1,26 @@
+{
+  "interviewme6App": {
+    "interviewSubject": {
+      "home": {
+        "title": "Interview Subjects",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Създайте нов Interview Subject",
+        "createOrEditLabel": "Създайте или редактирайте Interview Subject",
+        "notFound": "Interview Subjects не са намерени"
+      },
+      "created": "Създаден е нов Interview Subject с идентификатор {{ param }}",
+      "updated": "Interview Subject с идентификатор {{ param }} e oбновен",
+      "deleted": "Interview Subject с идентификатор {{ param }} е изтрит",
+      "delete": {
+        "question": "Наистина ли искате да изтриете Interview Subject {{ id }}?"
+      },
+      "detail": {
+        "title": "Interview Subject"
+      },
+      "id": "ID",
+      "name": "Name",
+      "parent": "Parent",
+      "interviewer": "Interviewer"
+    }
+  }
+}

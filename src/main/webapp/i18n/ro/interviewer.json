@@ -1,0 +1,29 @@
+{
+  "interviewme6App": {
+    "interviewer": {
+      "home": {
+        "title": "Interviewers",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Creeare o nouă entitate Interviewer",
+        "createOrEditLabel": "Creeare sau editare Interviewer",
+        "notFound": "No Interviewers found"
+      },
+      "created": "A fost creată o nouă entitate Interviewer cu identificatorul {{ param }}",
+      "updated": "Interviewer cu identificatorul {{ param }} a fost actualizată",
+      "deleted": "Interviewer cu identificatorul {{ param }} a fost ștearsă",
+      "delete": {
+        "question": "Sunteți sigur că doriți să ștergeți Interviewer {{ id }}?"
+      },
+      "detail": {
+        "title": "Interviewer"
+      },
+      "id": "ID",
+      "photo": "Photo",
+      "internalUser": "Internal User",
+      "personalDetail": "Personal Detail",
+      "subjects": "Subjects",
+      "slots": "Slots",
+      "appointment": "Appointment"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "interviewme6App": {
+    "workExperienceEntry": {
+      "home": {
+        "title": "Work Experience Entries",
+        "refreshListLabel": "Listeyi yenile",
+        "createLabel": "Yeni Work Experience Entry ekle",
+        "createOrEditLabel": "Yeni Work Experience Entry ekle veya guncelle",
+        "notFound": "Work Experience Entries kaydi bulunamadi"
+      },
+      "created": "{{ param }} ID ile bir Work Experience Entry eklendi",
+      "updated": "{{ param }} nolu Work Experience Entry guncellendi",
+      "deleted": "{{ param }} nolu Work Experience Entry silindi",
+      "delete": {
+        "question": "{{ id }} nolu Work Experience Entry silinecek. Devem etmek istiyor musunuz?"
+      },
+      "detail": {
+        "title": "Work Experience Entry"
+      },
+      "id": "ID",
+      "title": "Title",
+      "startDate": "Start Date",
+      "endDate": "End Date",
+      "company": "Company",
+      "description": "Description",
+      "industry": "Industry",
+      "formattedLocation": "Formatted Location",
+      "postalCode": "Postal Code",
+      "region": "Region",
+      "country": "Country",
+      "countryCode": "Country Code",
+      "rawInputLocation": "Raw Input Location",
+      "street": "Street",
+      "streetNumber": "Street Number",
+      "apartmentNumber": "Apartment Number",
+      "city": "City",
+      "personalDetail": "Personal Detail"
+    }
+  }
+}

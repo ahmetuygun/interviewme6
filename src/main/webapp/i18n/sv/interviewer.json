@@ -1,0 +1,29 @@
+{
+  "interviewme6App": {
+    "interviewer": {
+      "home": {
+        "title": "Interviewers",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Skapa en ny Interviewer",
+        "createOrEditLabel": "Skapa eller ändra en Interviewer",
+        "notFound": "No Interviewers found"
+      },
+      "created": "En ny Interviewer är skapad med id {{ param }}",
+      "updated": "En Interviewer är uppdaterad med id  {{ param }}",
+      "deleted": "En Interviewer är borttagen med id  {{ param }}",
+      "delete": {
+        "question": "Är du säker på att du vill ta bort Interviewer {{ id }}?"
+      },
+      "detail": {
+        "title": "Interviewer"
+      },
+      "id": "ID",
+      "photo": "Photo",
+      "internalUser": "Internal User",
+      "personalDetail": "Personal Detail",
+      "subjects": "Subjects",
+      "slots": "Slots",
+      "appointment": "Appointment"
+    }
+  }
+}

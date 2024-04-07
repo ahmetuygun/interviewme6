@@ -1,0 +1,26 @@
+{
+  "interviewme6App": {
+    "slot": {
+      "home": {
+        "title": "Slots",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Egy új Slot létrehozása",
+        "createOrEditLabel": "Hozzon létre, vagy módosítson Slott",
+        "notFound": "No Slots found"
+      },
+      "created": "Egy új Slot lett létrehozva {{ param }} azonosítóval",
+      "updated": "A Slot módosítva lett {{ param }} azonosítóval",
+      "deleted": "A Slot törölve lett {{ param }} azonosítóval",
+      "delete": {
+        "question": "Biztos benne, hogy törölni szeretné az Slott {{ id }} azonosítóval?"
+      },
+      "detail": {
+        "title": "Slot"
+      },
+      "id": "ID",
+      "slot": "Slot",
+      "isAvailable": "Is Available",
+      "interviewer": "Interviewer"
+    }
+  }
+}

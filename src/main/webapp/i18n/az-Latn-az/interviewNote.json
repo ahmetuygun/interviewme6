@@ -1,0 +1,27 @@
+{
+  "interviewme6App": {
+    "interviewNote": {
+      "home": {
+        "title": "Interview Notes",
+        "refreshListLabel": "Siyahını yenilə",
+        "createLabel": "Yeni Interview Note əlavə et",
+        "createOrEditLabel": "Yeni Interview Note əlavə et və ya yenilə",
+        "notFound": "Interview Notes məlumatı tapılmadı"
+      },
+      "created": "{{ param }} ID ilə bir Interview Note əlavə edildi",
+      "updated": "{{ param }} nolu Interview Note dəyişildi",
+      "deleted": "{{ param }} nolu Interview Note silindi",
+      "delete": {
+        "question": "{{ id }} nolu Interview Note silinəcək. Davam etmək istəyirsiniz?"
+      },
+      "detail": {
+        "title": "Interview Note"
+      },
+      "id": "ID",
+      "noteText": "Note Text",
+      "rating": "Rating",
+      "actionItems": "Action Items",
+      "feedback": "Feedback"
+    }
+  }
+}

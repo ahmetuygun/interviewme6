@@ -1,0 +1,29 @@
+{
+  "interviewme6App": {
+    "interviewAppointment": {
+      "home": {
+        "title": "Interview Appointments",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Skapa en ny Interview Appointment",
+        "createOrEditLabel": "Skapa eller ändra en Interview Appointment",
+        "notFound": "No Interview Appointments found"
+      },
+      "created": "En ny Interview Appointment är skapad med id {{ param }}",
+      "updated": "En Interview Appointment är uppdaterad med id  {{ param }}",
+      "deleted": "En Interview Appointment är borttagen med id  {{ param }}",
+      "delete": {
+        "question": "Är du säker på att du vill ta bort Interview Appointment {{ id }}?"
+      },
+      "detail": {
+        "title": "Interview Appointment"
+      },
+      "id": "ID",
+      "startTime": "Start Time",
+      "endTime": "End Time",
+      "googleMeetUrl": "Google Meet Url",
+      "status": "Status",
+      "interviewer": "Interviewer",
+      "interviewee": "Interviewee"
+    }
+  }
+}

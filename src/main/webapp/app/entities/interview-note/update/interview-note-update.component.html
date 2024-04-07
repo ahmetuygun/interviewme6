@@ -1,0 +1,70 @@
+<div class="d-flex justify-content-center">
+  <div class="col-10">
+    <form name="editForm" role="form" novalidate (ngSubmit)="save()" [formGroup]="editForm">
+      <h2
+        id="jhi-interview-note-heading"
+        data-cy="InterviewNoteCreateUpdateHeading"
+        jhiTranslate="interviewme6App.interviewNote.home.createOrEditLabel"
+      >
+        Create or edit a Interview Note
+      </h2>
+
+      <div>
+        <jhi-alert-error></jhi-alert-error>
+
+        @if (editForm.controls.id.value !== null) {
+          <div class="mb-3">
+            <label class="form-label" jhiTranslate="global.field.id" for="field_id">ID</label>
+            <input type="number" class="form-control" name="id" id="field_id" data-cy="id" formControlName="id" [readonly]="true" />
+          </div>
+        }
+
+        <div class="mb-3">
+          <label class="form-label" jhiTranslate="interviewme6App.interviewNote.noteText" for="field_noteText">Notes</label>
+          <textarea type="textarea"  class="form-control" rows="4" name="noteText" id="field_noteText" data-cy="noteText" formControlName="noteText"></textarea>
+        </div>
+
+
+
+        <div class="mb-3">
+          <label class="form-label" jhiTranslate="interviewme6App.interviewNote.actionItems" for="field_actionItems">Action Items</label>
+          <textarea type="textarea"  rows="4"
+            type="text"
+            class="form-control"
+            name="actionItems"
+            id="field_actionItems"
+            data-cy="actionItems"
+            formControlName="actionItems"
+          > </textarea>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" jhiTranslate="interviewme6App.interviewNote.feedback" for="field_feedback">Feedback</label>
+          <textarea type="textarea"  rows="4" type="text" class="form-control" name="feedback" id="field_feedback" data-cy="feedback" formControlName="feedback" ></textarea>
+        </div>
+
+
+        <div class="mb-3">
+          <label class="form-label" jhiTranslate="interviewme6App.interviewNote.rating" for="field_rating">Rating</label>
+          <input type="range" min="0" max="5" step="0.5" class="form-range" name="rating" id="field_rating" data-cy="rating" formControlName="rating" />
+        </div>
+      </div>
+
+      <div>
+        <button type="button" id="cancel-save" data-cy="entityCreateCancelButton" class="btn btn-secondary" (click)="previousState()">
+          <fa-icon icon="ban"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+        </button>
+
+        <button
+          type="submit"
+          id="save-entity"
+          data-cy="entityCreateSaveButton"
+          [disabled]="editForm.invalid || isSaving"
+          class="btn btn-primary"
+        >
+          <fa-icon icon="save"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

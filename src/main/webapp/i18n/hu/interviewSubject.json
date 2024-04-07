@@ -1,0 +1,26 @@
+{
+  "interviewme6App": {
+    "interviewSubject": {
+      "home": {
+        "title": "InterviewSubjects",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Egy új Interview Subject létrehozása",
+        "createOrEditLabel": "Hozzon létre, vagy módosítson Interview Subjectt",
+        "notFound": "No Interview Subjects found"
+      },
+      "created": "Egy új Interview Subject lett létrehozva {{ param }} azonosítóval",
+      "updated": "A Interview Subject módosítva lett {{ param }} azonosítóval",
+      "deleted": "A Interview Subject törölve lett {{ param }} azonosítóval",
+      "delete": {
+        "question": "Biztos benne, hogy törölni szeretné az Interview Subjectt {{ id }} azonosítóval?"
+      },
+      "detail": {
+        "title": "Interview Subject"
+      },
+      "id": "ID",
+      "name": "Name",
+      "parent": "Parent",
+      "interviewer": "Interviewer"
+    }
+  }
+}

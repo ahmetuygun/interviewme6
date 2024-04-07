@@ -1,0 +1,28 @@
+{
+  "interviewme6App": {
+    "interviewee": {
+      "home": {
+        "title": "Interviewees",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Δημιουργήστε ένα νέο Interviewee",
+        "createOrEditLabel": "Δημιουργήστε η επεξεργαστείτε ένα Interviewee",
+        "notFound": "No Interviewees found"
+      },
+      "created": "Ένα νέο Interviewee έχει δημιουργηθεί με αναγνωριστικό {{ param }}",
+      "updated": "Ένα Interviewee έχει ενημερωθεί με αναγνωριστικό {{ param }}",
+      "deleted": "Ένα Interviewee έχει διαγραφτεί με αναγνωριστικό {{ param }}",
+      "delete": {
+        "question": "Είστε βέβαιοι όταν θέλετε να διαγράψετε το ακόλουθο Interviewee {{ id }};"
+      },
+      "detail": {
+        "title": "Interviewee"
+      },
+      "id": "ID",
+      "photo": "Photo",
+      "internalUser": "Internal User",
+      "personalDetail": "Personal Detail",
+      "membership": "Membership",
+      "appointment": "Appointment"
+    }
+  }
+}

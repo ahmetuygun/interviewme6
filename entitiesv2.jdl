@@ -1,0 +1,155 @@
+// Define the entities
+entity Interviewer {
+    photo ImageBlob
+}
+
+entity Interviewee {
+    photo ImageBlob
+}
+
+entity MembershipLevel {
+    name String
+    description String
+    sessionAmount Integer
+    price Double
+}
+
+entity InterviewAppointment {
+    startTime ZonedDateTime
+    endTime ZonedDateTime
+    googleMeetUrl String
+    status StatusType
+}
+
+enum StatusType {
+    PENDING
+    CONFIRMED
+    CANCELLED
+    COMPLETED
+    RESCHEDULED
+}
+
+entity InterviewNote {
+    noteText String
+    rating Integer
+    actionItems String
+    feedback String
+
+}
+
+entity PersonalDetail {
+    cv Blob // Store photo as a binary blob
+    firstName String,
+    lastName String,
+    rawName String,
+    middle String,
+    title String,
+    prefix String,
+    suffix String,
+    formattedLocation String,
+    postalCode String,
+    region String,
+    country String,
+    countryCode String,
+    rawInputLocation String,
+    street String,
+    streetNumber String,
+    apartmentNumber String,
+    city String,
+    selfSummary String,
+    objective String,
+    dateOfBirth Instant,
+    placeOfBirth String,
+    phones String,
+    mails String,
+    urls String,
+    currentProfession String,
+    gender String,
+    nationality String,
+    martialStatus String,
+    currentSalary BigDecimal
+}
+
+entity WorkExperienceEntry {
+    title String,
+    startDate Instant,
+    endDate Instant,
+    company String,
+    description String,
+    industry String,
+    formattedLocation String,
+    postalCode String,
+    region String,
+    country String,
+    countryCode String,
+    rawInputLocation String,
+    street String,
+    streetNumber String,
+    apartmentNumber String,
+    city String
+}
+
+entity EducationEntry {
+    title String,
+    startDate LocalDate,
+    endDate LocalDate,
+    establishment String,
+    description String,
+    gpa Double,
+    accreditation String
+}
+
+entity Language {
+    name String,
+    code String
+    isNative Boolean
+}
+
+entity Skill {
+    name String,
+    type String
+}
+
+
+entity Slot {
+    slot  ZonedDateTime
+    isAvailable Boolean
+}
+
+entity InterviewSubject {
+    name String unique
+    parent String
+}
+
+
+// Define the relationships
+relationship OneToOne {
+    Interviewer{internalUser} to User with builtInEntity
+    Interviewee{internalUser} to User with builtInEntity
+    Interviewee{personalDetail} to PersonalDetail
+    Interviewer{personalDetail} to PersonalDetail
+
+}
+relationship OneToMany {
+    PersonalDetail{work} to WorkExperienceEntry{personalDetail}
+    PersonalDetail{education} to EducationEntry{personalDetail}
+    PersonalDetail{language} to Language{personalDetail}
+    PersonalDetail{skills} to Skill{personalDetail}
+    Interviewer{subjects} to InterviewSubject{interviewer}
+    Interviewer{slots} to Slot{Interviewer}
+
+}
+
+relationship ManyToOne {
+    Interviewee{membership} to MembershipLevel{interviewee}
+    InterviewAppointment{interviewer} to Interviewer{appointment}
+    InterviewAppointment{interviewee} to Interviewee{appointment}
+
+}
+
+
+// Set options
+paginate Interviewer, Interviewee, InterviewAppointment, InterviewNote, PersonalDetail, WorkExperienceEntry, EducationEntry, Slot, InterviewSubject with pagination
+filter Interviewer, Interviewee, InterviewAppointment, InterviewNote, PersonalDetail, WorkExperienceEntry, EducationEntry, Slot, InterviewSubject
+
+service all with serviceClass

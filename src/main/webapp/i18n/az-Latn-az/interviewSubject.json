@@ -1,0 +1,26 @@
+{
+  "interviewme6App": {
+    "interviewSubject": {
+      "home": {
+        "title": "Interview Subjects",
+        "refreshListLabel": "Siyahını yenilə",
+        "createLabel": "Yeni Interview Subject əlavə et",
+        "createOrEditLabel": "Yeni Interview Subject əlavə et və ya yenilə",
+        "notFound": "Interview Subjects məlumatı tapılmadı"
+      },
+      "created": "{{ param }} ID ilə bir Interview Subject əlavə edildi",
+      "updated": "{{ param }} nolu Interview Subject dəyişildi",
+      "deleted": "{{ param }} nolu Interview Subject silindi",
+      "delete": {
+        "question": "{{ id }} nolu Interview Subject silinəcək. Davam etmək istəyirsiniz?"
+      },
+      "detail": {
+        "title": "Interview Subject"
+      },
+      "id": "ID",
+      "name": "Name",
+      "parent": "Parent",
+      "interviewer": "Interviewer"
+    }
+  }
+}

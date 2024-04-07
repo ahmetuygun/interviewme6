@@ -1,0 +1,51 @@
+{
+  "annotations": {
+    "changelogDate": "20240127201525"
+  },
+  "applications": "*",
+  "entityTableName": "education_entry",
+  "fields": [
+    {
+      "fieldName": "title",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "startDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "endDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "establishment",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "gpa",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "accreditation",
+      "fieldType": "String"
+    }
+  ],
+  "jpaMetamodelFiltering": true,
+  "name": "EducationEntry",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "personalDetail",
+      "otherEntityRelationshipName": "education",
+      "relationshipName": "personalDetail",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

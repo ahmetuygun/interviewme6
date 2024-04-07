@@ -1,0 +1,68 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    @if (educationEntry) {
+      <div>
+        <h2 data-cy="educationEntryDetailsHeading">
+          <span jhiTranslate="interviewme6App.educationEntry.detail.title">Education Entry</span>
+        </h2>
+
+        <hr />
+
+        <jhi-alert-error></jhi-alert-error>
+
+        <jhi-alert></jhi-alert>
+
+        <dl class="row-md jh-entity-details">
+          <dt><span jhiTranslate="global.field.id">ID</span></dt>
+          <dd>
+            <span>{{ educationEntry.id }}</span>
+          </dd>
+          <dt><span jhiTranslate="interviewme6App.educationEntry.title">Title</span></dt>
+          <dd>
+            <span>{{ educationEntry.title }}</span>
+          </dd>
+          <dt><span jhiTranslate="interviewme6App.educationEntry.startDate">Start Date</span></dt>
+          <dd>
+            <span>{{ educationEntry.startDate | formatMediumDate }}</span>
+          </dd>
+          <dt><span jhiTranslate="interviewme6App.educationEntry.endDate">End Date</span></dt>
+          <dd>
+            <span>{{ educationEntry.endDate | formatMediumDate }}</span>
+          </dd>
+          <dt><span jhiTranslate="interviewme6App.educationEntry.establishment">Establishment</span></dt>
+          <dd>
+            <span>{{ educationEntry.establishment }}</span>
+          </dd>
+          <dt><span jhiTranslate="interviewme6App.educationEntry.description">Description</span></dt>
+          <dd>
+            <span>{{ educationEntry.description }}</span>
+          </dd>
+          <dt><span jhiTranslate="interviewme6App.educationEntry.gpa">Gpa</span></dt>
+          <dd>
+            <span>{{ educationEntry.gpa }}</span>
+          </dd>
+          <dt><span jhiTranslate="interviewme6App.educationEntry.accreditation">Accreditation</span></dt>
+          <dd>
+            <span>{{ educationEntry.accreditation }}</span>
+          </dd>
+          <dt><span jhiTranslate="interviewme6App.educationEntry.personalDetail">Personal Detail</span></dt>
+          <dd>
+            @if (educationEntry.personalDetail) {
+              <div>
+                <a [routerLink]="['/personal-detail', educationEntry.personalDetail.id, 'view']">{{ educationEntry.personalDetail.id }}</a>
+              </div>
+            }
+          </dd>
+        </dl>
+
+        <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+          <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+        </button>
+
+        <button type="button" [routerLink]="['/education-entry', educationEntry.id, 'edit']" class="btn btn-primary">
+          <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+        </button>
+      </div>
+    }
+  </div>
+</div>

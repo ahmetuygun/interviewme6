@@ -1,0 +1,31 @@
+{
+  "annotations": {
+    "changelogDate": "20240127201225"
+  },
+  "applications": "*",
+  "entityTableName": "interview_note",
+  "fields": [
+    {
+      "fieldName": "noteText",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "rating",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "actionItems",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "feedback",
+      "fieldType": "String"
+    }
+  ],
+  "jpaMetamodelFiltering": true,
+  "name": "InterviewNote",
+  "pagination": "pagination",
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

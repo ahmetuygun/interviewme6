@@ -1,0 +1,59 @@
+{
+  "interviewme6App": {
+    "personalDetail": {
+      "home": {
+        "title": "Personal Details",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Vytvořit Personal Detail",
+        "createOrEditLabel": "Vytvořit nebo upravit Personal Detail",
+        "notFound": "No Personal Details found"
+      },
+      "created": "Byl vytvořen potomek entity Personal Detail s identifikátorem {{ param }}",
+      "updated": "Potomek entity Personal Detail s identifikátorem {{ param }} byl upravený.",
+      "deleted": "Potomek entity Personal Detail s identifikátorem {{ param }} bol smazaný.",
+      "delete": {
+        "question": "Jste si jisti, že chcete smazat Personal Detail {{ id }}?"
+      },
+      "detail": {
+        "title": "Personal Detail"
+      },
+      "id": "ID",
+      "cv": "Cv",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "rawName": "Raw Name",
+      "middle": "Middle",
+      "title": "Title",
+      "prefix": "Prefix",
+      "suffix": "Suffix",
+      "formattedLocation": "Formatted Location",
+      "postalCode": "Postal Code",
+      "region": "Region",
+      "country": "Country",
+      "countryCode": "Country Code",
+      "rawInputLocation": "Raw Input Location",
+      "street": "Street",
+      "streetNumber": "Street Number",
+      "apartmentNumber": "Apartment Number",
+      "city": "City",
+      "selfSummary": "Self Summary",
+      "objective": "Objective",
+      "dateOfBirth": "Date Of Birth",
+      "placeOfBirth": "Place Of Birth",
+      "phones": "Phones",
+      "mails": "Mails",
+      "urls": "Urls",
+      "currentProfession": "Current Profession",
+      "gender": "Gender",
+      "nationality": "Nationality",
+      "martialStatus": "Martial Status",
+      "currentSalary": "Current Salary",
+      "work": "Work",
+      "education": "Education",
+      "language": "Language",
+      "skills": "Skills",
+      "interviewer": "Interviewer",
+      "interviewee": "Interviewee"
+    }
+  }
+}

@@ -1,0 +1,112 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    <form name="editForm" role="form" novalidate (ngSubmit)="save()" [formGroup]="editForm">
+      <h2
+        id="jhi-personal-detail-heading"
+        data-cy="PersonalDetailCreateUpdateHeading"
+        jhiTranslate="interviewme6App.personalDetail.home.createOrEditLabel"
+      >
+        Create or edit a Personal Detail
+      </h2>
+
+      <div>
+        <jhi-alert-error></jhi-alert-error>
+
+
+        <div class="mb-3">
+          <label class="form-label" jhiTranslate="interviewme6App.personalDetail.firstName" for="field_firstName">First Name</label>
+          <input type="text" class="form-control" name="firstName" id="field_firstName" data-cy="firstName" formControlName="firstName" />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" jhiTranslate="interviewme6App.personalDetail.lastName" for="field_lastName">Last Name</label>
+          <input type="text" class="form-control" name="lastName" id="field_lastName" data-cy="lastName" formControlName="lastName" />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" jhiTranslate="interviewme6App.personalDetail.country" for="field_country">Country</label>
+          <input type="text" class="form-control" name="country" id="field_country" data-cy="country" formControlName="country" />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" jhiTranslate="interviewme6App.personalDetail.city" for="field_city">City</label>
+          <input type="text" class="form-control" name="city" id="field_city" data-cy="city" formControlName="city" />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" jhiTranslate="interviewme6App.personalDetail.selfSummary" for="field_selfSummary">Self Summary</label>
+          <input
+            type="textarea"
+            class="form-control"
+            rows="10"
+            maxlength="10"
+            maxlength="10"
+            name="selfSummary"
+            id="field_selfSummary"
+            data-cy="selfSummary"
+            formControlName="selfSummary"
+          />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" jhiTranslate="interviewme6App.personalDetail.placeOfBirth" for="field_placeOfBirth"
+            >Place Of Birth</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            name="placeOfBirth"
+            id="field_placeOfBirth"
+            data-cy="placeOfBirth"
+            formControlName="placeOfBirth"
+          />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" jhiTranslate="interviewme6App.personalDetail.phones" for="field_phones">Phones</label>
+          <input type="text" class="form-control" name="phones" id="field_phones" data-cy="phones" formControlName="phones" />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" jhiTranslate="interviewme6App.personalDetail.mails" for="field_mails">Mails</label>
+          <input type="text" class="form-control" name="mails" id="field_mails" data-cy="mails" formControlName="mails" />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" jhiTranslate="interviewme6App.personalDetail.urls" for="field_urls">Urls</label>
+          <input type="text" class="form-control" name="urls" id="field_urls" data-cy="urls" formControlName="urls" />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" jhiTranslate="interviewme6App.personalDetail.currentProfession" for="field_currentProfession"
+            >Current Profession</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            name="currentProfession"
+            id="field_currentProfession"
+            data-cy="currentProfession"
+            formControlName="currentProfession"
+          />
+        </div>
+
+      </div>
+      <div>
+        <button type="button" id="cancel-save" data-cy="entityCreateCancelButton" class="btn btn-secondary" (click)="previousState()">
+          <fa-icon icon="ban"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+        </button>
+
+        <button
+          type="submit"
+          id="save-entity"
+          data-cy="entityCreateSaveButton"
+          [disabled]="editForm.invalid || isSaving"
+          class="btn btn-primary"
+        >
+          <fa-icon icon="save"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

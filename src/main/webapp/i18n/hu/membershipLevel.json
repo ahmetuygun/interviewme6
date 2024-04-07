@@ -1,0 +1,28 @@
+{
+  "interviewme6App": {
+    "membershipLevel": {
+      "home": {
+        "title": "MembershipLevels",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Egy új Membership Level létrehozása",
+        "createOrEditLabel": "Hozzon létre, vagy módosítson Membership Levelt",
+        "notFound": "No Membership Levels found"
+      },
+      "created": "Egy új Membership Level lett létrehozva {{ param }} azonosítóval",
+      "updated": "A Membership Level módosítva lett {{ param }} azonosítóval",
+      "deleted": "A Membership Level törölve lett {{ param }} azonosítóval",
+      "delete": {
+        "question": "Biztos benne, hogy törölni szeretné az Membership Levelt {{ id }} azonosítóval?"
+      },
+      "detail": {
+        "title": "Membership Level"
+      },
+      "id": "ID",
+      "name": "Name",
+      "description": "Description",
+      "sessionAmount": "Session Amount",
+      "price": "Price",
+      "interviewee": "Interviewee"
+    }
+  }
+}

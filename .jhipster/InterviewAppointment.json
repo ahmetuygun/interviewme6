@@ -1,0 +1,47 @@
+{
+  "annotations": {
+    "changelogDate": "20240127201125"
+  },
+  "applications": "*",
+  "entityTableName": "interview_appointment",
+  "fields": [
+    {
+      "fieldName": "startTime",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "endTime",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "googleMeetUrl",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "StatusType",
+      "fieldValues": "PENDING,CONFIRMED,CANCELLED,COMPLETED,RESCHEDULED"
+    }
+  ],
+  "jpaMetamodelFiltering": true,
+  "name": "InterviewAppointment",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "interviewer",
+      "otherEntityRelationshipName": "appointment",
+      "relationshipName": "interviewer",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "interviewee",
+      "otherEntityRelationshipName": "appointment",
+      "relationshipName": "interviewee",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

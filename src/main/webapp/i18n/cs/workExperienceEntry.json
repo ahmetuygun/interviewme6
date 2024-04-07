@@ -1,0 +1,40 @@
+{
+  "interviewme6App": {
+    "workExperienceEntry": {
+      "home": {
+        "title": "Work Experience Entries",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Vytvořit Work Experience Entry",
+        "createOrEditLabel": "Vytvořit nebo upravit Work Experience Entry",
+        "notFound": "No Work Experience Entries found"
+      },
+      "created": "Byl vytvořen potomek entity Work Experience Entry s identifikátorem {{ param }}",
+      "updated": "Potomek entity Work Experience Entry s identifikátorem {{ param }} byl upravený.",
+      "deleted": "Potomek entity Work Experience Entry s identifikátorem {{ param }} bol smazaný.",
+      "delete": {
+        "question": "Jste si jisti, že chcete smazat Work Experience Entry {{ id }}?"
+      },
+      "detail": {
+        "title": "Work Experience Entry"
+      },
+      "id": "ID",
+      "title": "Title",
+      "startDate": "Start Date",
+      "endDate": "End Date",
+      "company": "Company",
+      "description": "Description",
+      "industry": "Industry",
+      "formattedLocation": "Formatted Location",
+      "postalCode": "Postal Code",
+      "region": "Region",
+      "country": "Country",
+      "countryCode": "Country Code",
+      "rawInputLocation": "Raw Input Location",
+      "street": "Street",
+      "streetNumber": "Street Number",
+      "apartmentNumber": "Apartment Number",
+      "city": "City",
+      "personalDetail": "Personal Detail"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "interviewme6App": {
+    "interviewer": {
+      "home": {
+        "title": "Interviewers",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Egy új Interviewer létrehozása",
+        "createOrEditLabel": "Hozzon létre, vagy módosítson Interviewert",
+        "notFound": "No Interviewers found"
+      },
+      "created": "Egy új Interviewer lett létrehozva {{ param }} azonosítóval",
+      "updated": "A Interviewer módosítva lett {{ param }} azonosítóval",
+      "deleted": "A Interviewer törölve lett {{ param }} azonosítóval",
+      "delete": {
+        "question": "Biztos benne, hogy törölni szeretné az Interviewert {{ id }} azonosítóval?"
+      },
+      "detail": {
+        "title": "Interviewer"
+      },
+      "id": "ID",
+      "photo": "Photo",
+      "internalUser": "Internal User",
+      "personalDetail": "Personal Detail",
+      "subjects": "Subjects",
+      "slots": "Slots",
+      "appointment": "Appointment"
+    }
+  }
+}

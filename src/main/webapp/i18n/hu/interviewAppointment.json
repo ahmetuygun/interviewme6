@@ -1,0 +1,29 @@
+{
+  "interviewme6App": {
+    "interviewAppointment": {
+      "home": {
+        "title": "InterviewAppointments",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Egy új Interview Appointment létrehozása",
+        "createOrEditLabel": "Hozzon létre, vagy módosítson Interview Appointmentt",
+        "notFound": "No Interview Appointments found"
+      },
+      "created": "Egy új Interview Appointment lett létrehozva {{ param }} azonosítóval",
+      "updated": "A Interview Appointment módosítva lett {{ param }} azonosítóval",
+      "deleted": "A Interview Appointment törölve lett {{ param }} azonosítóval",
+      "delete": {
+        "question": "Biztos benne, hogy törölni szeretné az Interview Appointmentt {{ id }} azonosítóval?"
+      },
+      "detail": {
+        "title": "Interview Appointment"
+      },
+      "id": "ID",
+      "startTime": "Start Time",
+      "endTime": "End Time",
+      "googleMeetUrl": "Google Meet Url",
+      "status": "Status",
+      "interviewer": "Interviewer",
+      "interviewee": "Interviewee"
+    }
+  }
+}

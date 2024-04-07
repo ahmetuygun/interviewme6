@@ -1,0 +1,28 @@
+{
+  "interviewme6App": {
+    "interviewee": {
+      "home": {
+        "title": "Interviewee",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Dodaj Interviewee",
+        "createOrEditLabel": "Dodaj lub edytuj: Interviewee",
+        "notFound": "No Interviewees found"
+      },
+      "created": "Utworzono nowy obiekt typu Interviewee z identyfikatorem {{ param }}",
+      "updated": "Uaktualniono obiekt typu Interviewee z identyfikatorem {{ param }}",
+      "deleted": "Usunięto obiekt typu Interviewee z identyfikatorem {{ param }}",
+      "delete": {
+        "question": "Czy na pewno chcesz usunąć Interviewee {{ id }}?"
+      },
+      "detail": {
+        "title": "Interviewee"
+      },
+      "id": "ID",
+      "photo": "Photo",
+      "internalUser": "Internal User",
+      "personalDetail": "Personal Detail",
+      "membership": "Membership",
+      "appointment": "Appointment"
+    }
+  }
+}

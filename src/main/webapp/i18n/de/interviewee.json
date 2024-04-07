@@ -1,0 +1,28 @@
+{
+  "interviewme6App": {
+    "interviewee": {
+      "home": {
+        "title": "Interviewees",
+        "refreshListLabel": "Liste aktualisieren",
+        "createLabel": "Interviewee erstellen",
+        "createOrEditLabel": "Interviewee erstellen oder bearbeiten",
+        "notFound": "Keine Interviewees gefunden"
+      },
+      "created": "Interviewee erstellt mit ID {{ param }}",
+      "updated": "Interviewee aktualisiert mit ID {{ param }}",
+      "deleted": "Interviewee gelöscht mit ID {{ param }}",
+      "delete": {
+        "question": "Soll Interviewee {{ id }} wirklich dauerhaft gelöscht werden?"
+      },
+      "detail": {
+        "title": "Interviewee"
+      },
+      "id": "ID",
+      "photo": "Photo",
+      "internalUser": "Internal User",
+      "personalDetail": "Personal Detail",
+      "membership": "Membership",
+      "appointment": "Appointment"
+    }
+  }
+}

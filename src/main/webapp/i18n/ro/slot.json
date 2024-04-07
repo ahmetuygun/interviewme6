@@ -1,0 +1,26 @@
+{
+  "interviewme6App": {
+    "slot": {
+      "home": {
+        "title": "Slots",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Creeare o nouă entitate Slot",
+        "createOrEditLabel": "Creeare sau editare Slot",
+        "notFound": "No Slots found"
+      },
+      "created": "A fost creată o nouă entitate Slot cu identificatorul {{ param }}",
+      "updated": "Slot cu identificatorul {{ param }} a fost actualizată",
+      "deleted": "Slot cu identificatorul {{ param }} a fost ștearsă",
+      "delete": {
+        "question": "Sunteți sigur că doriți să ștergeți Slot {{ id }}?"
+      },
+      "detail": {
+        "title": "Slot"
+      },
+      "id": "ID",
+      "slot": "Slot",
+      "isAvailable": "Is Available",
+      "interviewer": "Interviewer"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "interviewme6App": {
+    "interviewAppointment": {
+      "home": {
+        "title": "Interview Appointments",
+        "refreshListLabel": "Обновить список",
+        "createLabel": "Создать новый Interview Appointment",
+        "createOrEditLabel": "Создать или отредактировать Interview Appointment",
+        "notFound": "Interview Appointments не найдено"
+      },
+      "created": "Новый Interview Appointment создан с идентификатором {{ param }}",
+      "updated": "Interview Appointment обновлен с идентификатором {{ param }}",
+      "deleted": "Interview Appointment удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Interview Appointment {{ id }}?"
+      },
+      "detail": {
+        "title": "Interview Appointment"
+      },
+      "id": "ID",
+      "startTime": "Start Time",
+      "endTime": "End Time",
+      "googleMeetUrl": "Google Meet Url",
+      "status": "Status",
+      "interviewer": "Interviewer",
+      "interviewee": "Interviewee"
+    }
+  }
+}

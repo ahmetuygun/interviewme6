@@ -1,0 +1,27 @@
+{
+  "interviewme6App": {
+    "language": {
+      "home": {
+        "title": "Languages",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Vytvořit Language",
+        "createOrEditLabel": "Vytvořit nebo upravit Language",
+        "notFound": "No Languages found"
+      },
+      "created": "Byl vytvořen potomek entity Language s identifikátorem {{ param }}",
+      "updated": "Potomek entity Language s identifikátorem {{ param }} byl upravený.",
+      "deleted": "Potomek entity Language s identifikátorem {{ param }} bol smazaný.",
+      "delete": {
+        "question": "Jste si jisti, že chcete smazat Language {{ id }}?"
+      },
+      "detail": {
+        "title": "Language"
+      },
+      "id": "ID",
+      "name": "Name",
+      "code": "Code",
+      "isNative": "Is Native",
+      "personalDetail": "Personal Detail"
+    }
+  }
+}

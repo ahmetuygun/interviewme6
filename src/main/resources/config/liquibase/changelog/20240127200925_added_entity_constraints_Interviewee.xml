@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <!--
+        Added the constraints for entity Interviewee.
+    -->
+    <changeSet id="20240127200925-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="internal_user_id"
+                                 baseTableName="interviewee"
+                                 constraintName="fk_interviewee__internal_user_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="jhi_user"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="personal_detail_id"
+                                 baseTableName="interviewee"
+                                 constraintName="fk_interviewee__personal_detail_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="personal_detail"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="membership_id"
+                                 baseTableName="interviewee"
+                                 constraintName="fk_interviewee__membership_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="membership_level"
+                                 />
+    </changeSet>
+</databaseChangeLog>

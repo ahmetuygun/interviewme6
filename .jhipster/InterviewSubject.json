@@ -1,0 +1,32 @@
+{
+  "annotations": {
+    "changelogDate": "20240127201925"
+  },
+  "applications": "*",
+  "entityTableName": "interview_subject",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["unique"]
+    },
+    {
+      "fieldName": "parent",
+      "fieldType": "String"
+    }
+  ],
+  "jpaMetamodelFiltering": true,
+  "name": "InterviewSubject",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "interviewer",
+      "otherEntityRelationshipName": "subjects",
+      "relationshipName": "interviewer",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

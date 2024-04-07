@@ -1,0 +1,89 @@
+<div class="d-flex justify-content-start w-100">
+  <div class="col-12 shadow p-5 bg-white rounded-4">
+    @if (personalDetail) {
+      <div>
+        <jhi-alert-error></jhi-alert-error>
+        <jhi-alert></jhi-alert>
+
+      </div>
+
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="d-flex flex-column justify-content-center align-items-center  pt-2">
+              <img
+                [src]="'data:' + photoContentType + ';base64,' + photo"
+                class="img-fluid rounded-lg shadow-lg" alt="Profile Photo" style="width: 150px;"
+                alt="interviewer image"
+              />
+              <h2 class="pt-2">{{ personalDetail.firstName }} {{ personalDetail.lastName }}</h2>
+
+            </div>
+            <ul class="list-unstyled pt-4  ">
+              <li class="p-1"> <fa-icon class="m-2" [icon]="faMapPin" [style.color]="'#3e8acc'"></fa-icon>
+                {{ personalDetail.city }},  {{ personalDetail.country }} </li>
+              <li class="p-1"><fa-icon class="m-1" [icon]="faEnvelope" [style.color]="'#3e8acc'"></fa-icon>  {{ personalDetail.mails }}</li>
+              <li class="p-1"><fa-icon class="m-1" [icon]="faPhone" [style.color]="'#3e8acc'"></fa-icon> {{ personalDetail.phones }}</li>
+              <li class="p-1"><fa-icon  [icon]="faLink" [style.color]="'#3e8acc'"></fa-icon> <a href="{{ personalDetail.urls }}" class="btn btn-sm me-2">{{ personalDetail.urls }}</a></li>
+              @if (cv) {
+              <li class="p-1"><fa-icon  class="m-1" [icon]="faFile" [style.color]="'#3e8acc'"></fa-icon> <a (click)="openFile(cv, cvContentType)" class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover p-1"> Cv</a></li>
+              }
+            </ul>
+
+
+
+          </div>
+          <div class="col-md-8">
+            <div class="profile-details p-5">
+
+              <h2>{{ personalDetail.currentProfession }}</h2>
+              <p >Summary: {{ personalDetail.selfSummary }}</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="row">
+        <div class="col" >
+          <jhi-education-entry [personalDetailId]="personalDetail.id"></jhi-education-entry>
+
+          <h2 class="pt-5">Languages</h2>
+          <div class="row">
+            <div class="col">
+              <div class="d-flex flex-wrap">
+                <div>
+                  <span *ngFor="let language of splitSkills(personalDetail.languages)"
+                        class="badge badge-pill bg-light text-dark m-1 p-2">{{ language }}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h2 class="pt-5">Skills</h2>
+          <div class="row">
+            <div class="col">
+              <div class="d-flex flex-wrap">
+                <div>
+                  <span *ngFor="let skill of splitSkills(personalDetail.skills)"
+                        class="badge badge-pill bg-light text-dark m-1 p-2">{{ skill }}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <jhi-work-experience-entry [personalDetailId]="personalDetail.id"></jhi-work-experience-entry>
+        </div>
+
+        <div>
+
+
+        </div>
+      </div>
+
+    }
+  </div>
+</div>

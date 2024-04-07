@@ -1,0 +1,28 @@
+{
+  "interviewme6App": {
+    "membershipLevel": {
+      "home": {
+        "title": "Membership Levels",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Creeare o nouă entitate Membership Level",
+        "createOrEditLabel": "Creeare sau editare Membership Level",
+        "notFound": "No Membership Levels found"
+      },
+      "created": "A fost creată o nouă entitate Membership Level cu identificatorul {{ param }}",
+      "updated": "Membership Level cu identificatorul {{ param }} a fost actualizată",
+      "deleted": "Membership Level cu identificatorul {{ param }} a fost ștearsă",
+      "delete": {
+        "question": "Sunteți sigur că doriți să ștergeți Membership Level {{ id }}?"
+      },
+      "detail": {
+        "title": "Membership Level"
+      },
+      "id": "ID",
+      "name": "Name",
+      "description": "Description",
+      "sessionAmount": "Session Amount",
+      "price": "Price",
+      "interviewee": "Interviewee"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "interviewme6App": {
+    "membershipLevel": {
+      "home": {
+        "title": "Membership Levels",
+        "refreshListLabel": "Обновить список",
+        "createLabel": "Создать новый Membership Level",
+        "createOrEditLabel": "Создать или отредактировать Membership Level",
+        "notFound": "Membership Levels не найдено"
+      },
+      "created": "Новый Membership Level создан с идентификатором {{ param }}",
+      "updated": "Membership Level обновлен с идентификатором {{ param }}",
+      "deleted": "Membership Level удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Membership Level {{ id }}?"
+      },
+      "detail": {
+        "title": "Membership Level"
+      },
+      "id": "ID",
+      "name": "Name",
+      "description": "Description",
+      "sessionAmount": "Session Amount",
+      "price": "Price",
+      "interviewee": "Interviewee"
+    }
+  }
+}

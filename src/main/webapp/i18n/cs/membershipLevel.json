@@ -1,0 +1,28 @@
+{
+  "interviewme6App": {
+    "membershipLevel": {
+      "home": {
+        "title": "Membership Levels",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Vytvořit Membership Level",
+        "createOrEditLabel": "Vytvořit nebo upravit Membership Level",
+        "notFound": "No Membership Levels found"
+      },
+      "created": "Byl vytvořen potomek entity Membership Level s identifikátorem {{ param }}",
+      "updated": "Potomek entity Membership Level s identifikátorem {{ param }} byl upravený.",
+      "deleted": "Potomek entity Membership Level s identifikátorem {{ param }} bol smazaný.",
+      "delete": {
+        "question": "Jste si jisti, že chcete smazat Membership Level {{ id }}?"
+      },
+      "detail": {
+        "title": "Membership Level"
+      },
+      "id": "ID",
+      "name": "Name",
+      "description": "Description",
+      "sessionAmount": "Session Amount",
+      "price": "Price",
+      "interviewee": "Interviewee"
+    }
+  }
+}

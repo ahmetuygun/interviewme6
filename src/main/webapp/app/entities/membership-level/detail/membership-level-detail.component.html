@@ -1,0 +1,48 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    @if (membershipLevel) {
+      <div>
+        <h2 data-cy="membershipLevelDetailsHeading">
+          <span jhiTranslate="interviewme6App.membershipLevel.detail.title">Membership Level</span>
+        </h2>
+
+        <hr />
+
+        <jhi-alert-error></jhi-alert-error>
+
+        <jhi-alert></jhi-alert>
+
+        <dl class="row-md jh-entity-details">
+          <dt><span jhiTranslate="global.field.id">ID</span></dt>
+          <dd>
+            <span>{{ membershipLevel.id }}</span>
+          </dd>
+          <dt><span jhiTranslate="interviewme6App.membershipLevel.name">Name</span></dt>
+          <dd>
+            <span>{{ membershipLevel.name }}</span>
+          </dd>
+          <dt><span jhiTranslate="interviewme6App.membershipLevel.description">Description</span></dt>
+          <dd>
+            <span>{{ membershipLevel.description }}</span>
+          </dd>
+          <dt><span jhiTranslate="interviewme6App.membershipLevel.sessionAmount">Session Amount</span></dt>
+          <dd>
+            <span>{{ membershipLevel.sessionAmount }}</span>
+          </dd>
+          <dt><span jhiTranslate="interviewme6App.membershipLevel.price">Price</span></dt>
+          <dd>
+            <span>{{ membershipLevel.price }}</span>
+          </dd>
+        </dl>
+
+        <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+          <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+        </button>
+
+        <button type="button" [routerLink]="['/membership-level', membershipLevel.id, 'edit']" class="btn btn-primary">
+          <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+        </button>
+      </div>
+    }
+  </div>
+</div>

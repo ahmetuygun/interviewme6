@@ -1,0 +1,185 @@
+<div>
+  <h2 id="page-heading" data-cy="InterviewerHeading">
+    <span jhiTranslate="interviewme6App.interviewer.home.title">Interviewers</span>
+
+    <div class="d-flex justify-content-end">
+      <button class="btn btn-info me-2" (click)="load()" [disabled]="isLoading">
+        <fa-icon icon="sync" [spin]="isLoading"></fa-icon>
+        <span jhiTranslate="interviewme6App.interviewer.home.refreshListLabel">Refresh list</span>
+      </button>
+
+      <button
+        id="jh-create-entity"
+        data-cy="entityCreateButton"
+        class="btn btn-primary jh-create-entity create-interviewer"
+        [routerLink]="['/interviewer/new']"
+      >
+        <fa-icon icon="plus"></fa-icon>
+        <span jhiTranslate="interviewme6App.interviewer.home.createLabel">Create a new Interviewer</span>
+      </button>
+    </div>
+  </h2>
+
+  <jhi-alert-error></jhi-alert-error>
+
+  <jhi-alert></jhi-alert>
+
+  <jhi-filter [filters]="filters"></jhi-filter>
+
+  @if (interviewers?.length === 0) {
+    <div class="alert alert-warning" id="no-result">
+      <span jhiTranslate="interviewme6App.interviewer.home.notFound">No Interviewers found</span>
+    </div>
+  }
+
+  @if (interviewers && interviewers.length > 0) {
+    <div class="table-responsive table-entities" id="entities">
+      <table class="table table-striped" aria-describedby="page-heading">
+        <thead>
+          <tr jhiSort [(predicate)]="predicate" [(ascending)]="ascending" (sortChange)="navigateToWithComponentValues()">
+            <th scope="col" jhiSortBy="id">
+              <div class="d-flex">
+                <span jhiTranslate="global.field.id">ID</span>
+
+                <fa-icon class="p-1" icon="sort"></fa-icon>
+              </div>
+            </th>
+            <th scope="col" jhiSortBy="photo">
+              <div class="d-flex">
+                <span jhiTranslate="interviewme6App.interviewer.photo">Photo</span>
+
+                <fa-icon class="p-1" icon="sort"></fa-icon>
+              </div>
+            </th>
+            <th scope="col" jhiSortBy="internalUser.id">
+              <div class="d-flex">
+                <span jhiTranslate="interviewme6App.interviewer.internalUser">Internal User</span>
+                <fa-icon class="p-1" icon="sort"></fa-icon>
+              </div>
+            </th>
+            <th scope="col" jhiSortBy="personalDetail.id">
+              <div class="d-flex">
+                <span jhiTranslate="interviewme6App.interviewer.personalDetail">Personal Detail</span>
+                <fa-icon class="p-1" icon="sort"></fa-icon>
+              </div>
+            </th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          @for (interviewer of interviewers; track trackId) {
+            <tr data-cy="entityTable">
+              <td>
+                <a [routerLink]="['/interviewer', interviewer.id, 'view']">{{ interviewer.id }}</a>
+              </td>
+              <td>
+                @if (interviewer.photo) {
+                  <a (click)="openFile(interviewer.photo, interviewer.photoContentType)">
+                    <img
+                      [src]="'data:' + interviewer.photoContentType + ';base64,' + interviewer.photo"
+                      style="max-height: 30px"
+                      alt="interviewer image"
+                    />
+                  </a>
+                  <span>{{ interviewer.photoContentType }}, {{ byteSize(interviewer.photo) }}</span>
+                }
+              </td>
+              <td>
+                {{ interviewer.internalUser?.id }}
+              </td>
+              <td>
+                @if (interviewer.personalDetail) {
+                  <div>
+                    <a [routerLink]="['/personal-detail', interviewer.personalDetail.id, 'view']">{{ interviewer.personalDetail.id }}</a>
+                  </div>
+                }
+              </td>
+              <td class="text-end">
+                <div class="btn-group">
+                  <button
+                    type="submit"
+                    [routerLink]="['/interview-subject']"
+                    [queryParams]="{ 'filter[interviewerId.in]': interviewer.id }"
+                    class="btn btn-info btn-sm"
+                    data-cy="filterOtherEntityButton"
+                  >
+                    <fa-icon icon="eye"></fa-icon>
+                    <span
+                      class="d-none d-md-inline"
+                      jhiTranslate="entity.action.show"
+                      [translateValues]="{ otherEntity: ('interviewme6App.interviewer.subjects' | translate) }"
+                      >Show Interview Subject</span
+                    >
+                  </button>
+                  <button
+                    type="submit"
+                    [routerLink]="['/slot']"
+                    [queryParams]="{ 'filter[interviewerId.in]': interviewer.id }"
+                    class="btn btn-info btn-sm"
+                    data-cy="filterOtherEntityButton"
+                  >
+                    <fa-icon icon="eye"></fa-icon>
+                    <span
+                      class="d-none d-md-inline"
+                      jhiTranslate="entity.action.show"
+                      [translateValues]="{ otherEntity: ('interviewme6App.interviewer.slots' | translate) }"
+                      >Show Slot</span
+                    >
+                  </button>
+                  <button
+                    type="submit"
+                    [routerLink]="['/interview-appointment']"
+                    [queryParams]="{ 'filter[interviewerId.in]': interviewer.id }"
+                    class="btn btn-info btn-sm"
+                    data-cy="filterOtherEntityButton"
+                  >
+                    <fa-icon icon="eye"></fa-icon>
+                    <span
+                      class="d-none d-md-inline"
+                      jhiTranslate="entity.action.show"
+                      [translateValues]="{ otherEntity: ('interviewme6App.interviewer.appointment' | translate) }"
+                      >Show Interview Appointment</span
+                    >
+                  </button>
+                  <a [routerLink]="['/interviewer', interviewer.id, 'view']" class="btn btn-info btn-sm" data-cy="entityDetailsButton">
+                    <fa-icon icon="eye"></fa-icon>
+                    <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+                  </a>
+
+                  <a [routerLink]="['/interviewer', interviewer.id, 'edit']" class="btn btn-primary btn-sm" data-cy="entityEditButton">
+                    <fa-icon icon="pencil-alt"></fa-icon>
+                    <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+                  </a>
+
+                  <button type="submit" (click)="delete(interviewer)" class="btn btn-danger btn-sm" data-cy="entityDeleteButton">
+                    <fa-icon icon="times"></fa-icon>
+                    <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+                  </button>
+                </div>
+              </td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+  }
+  @if (interviewers && interviewers.length > 0) {
+    <div>
+      <div class="d-flex justify-content-center">
+        <jhi-item-count [params]="{ page: page, totalItems: totalItems, itemsPerPage: itemsPerPage }"></jhi-item-count>
+      </div>
+
+      <div class="d-flex justify-content-center">
+        <ngb-pagination
+          [collectionSize]="totalItems"
+          [page]="page"
+          [pageSize]="itemsPerPage"
+          [maxSize]="5"
+          [rotate]="true"
+          [boundaryLinks]="true"
+          (pageChange)="navigateToPage($event)"
+        ></ngb-pagination>
+      </div>
+    </div>
+  }
+</div>

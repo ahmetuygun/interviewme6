@@ -1,0 +1,26 @@
+{
+  "interviewme6App": {
+    "slot": {
+      "home": {
+        "title": "Slots",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Skapa en ny Slot",
+        "createOrEditLabel": "Skapa eller ändra en Slot",
+        "notFound": "No Slots found"
+      },
+      "created": "En ny Slot är skapad med id {{ param }}",
+      "updated": "En Slot är uppdaterad med id  {{ param }}",
+      "deleted": "En Slot är borttagen med id  {{ param }}",
+      "delete": {
+        "question": "Är du säker på att du vill ta bort Slot {{ id }}?"
+      },
+      "detail": {
+        "title": "Slot"
+      },
+      "id": "ID",
+      "slot": "Slot",
+      "isAvailable": "Is Available",
+      "interviewer": "Interviewer"
+    }
+  }
+}

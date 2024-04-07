@@ -1,0 +1,26 @@
+{
+  "interviewme6App": {
+    "slot": {
+      "home": {
+        "title": "Slots",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Maak een nieuwe Slot",
+        "createOrEditLabel": "Maak of wijzig een Slot",
+        "notFound": "No Slots found"
+      },
+      "created": "A new Slot is created with identifier {{ param }}",
+      "updated": "A Slot is updated with identifier {{ param }}",
+      "deleted": "A Slot is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Bent u zeker dat u Slot {{ id }} wilt verwijderen?"
+      },
+      "detail": {
+        "title": "Slot"
+      },
+      "id": "ID",
+      "slot": "Slot",
+      "isAvailable": "Is Available",
+      "interviewer": "Interviewer"
+    }
+  }
+}

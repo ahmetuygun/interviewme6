@@ -1,0 +1,29 @@
+{
+  "interviewme6App": {
+    "interviewAppointment": {
+      "home": {
+        "title": "Interview Appointments",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Interview Appointment",
+        "createOrEditLabel": "Crear o editar Interview Appointment",
+        "notFound": "Ningún Interview Appointments encontrado"
+      },
+      "created": "Un nuevo Interview Appointment ha sido creado con el identificador {{ param }}",
+      "updated": "Un Interview Appointment ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Interview Appointment ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Interview Appointment {{ id }}?"
+      },
+      "detail": {
+        "title": "Interview Appointment"
+      },
+      "id": "ID",
+      "startTime": "Start Time",
+      "endTime": "End Time",
+      "googleMeetUrl": "Google Meet Url",
+      "status": "Status",
+      "interviewer": "Interviewer",
+      "interviewee": "Interviewee"
+    }
+  }
+}

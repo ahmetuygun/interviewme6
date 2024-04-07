@@ -1,0 +1,29 @@
+{
+  "interviewme6App": {
+    "interviewer": {
+      "home": {
+        "title": "Interviewers",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Maak een nieuwe Interviewer",
+        "createOrEditLabel": "Maak of wijzig een Interviewer",
+        "notFound": "No Interviewers found"
+      },
+      "created": "A new Interviewer is created with identifier {{ param }}",
+      "updated": "A Interviewer is updated with identifier {{ param }}",
+      "deleted": "A Interviewer is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Bent u zeker dat u Interviewer {{ id }} wilt verwijderen?"
+      },
+      "detail": {
+        "title": "Interviewer"
+      },
+      "id": "ID",
+      "photo": "Photo",
+      "internalUser": "Internal User",
+      "personalDetail": "Personal Detail",
+      "subjects": "Subjects",
+      "slots": "Slots",
+      "appointment": "Appointment"
+    }
+  }
+}

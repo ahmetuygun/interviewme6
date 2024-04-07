@@ -1,0 +1,29 @@
+{
+  "interviewme6App": {
+    "interviewAppointment": {
+      "home": {
+        "title": "Interview Appointments",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Δημιουργήστε ένα νέο Interview Appointment",
+        "createOrEditLabel": "Δημιουργήστε η επεξεργαστείτε ένα Interview Appointment",
+        "notFound": "No Interview Appointments found"
+      },
+      "created": "Ένα νέο Interview Appointment έχει δημιουργηθεί με αναγνωριστικό {{ param }}",
+      "updated": "Ένα Interview Appointment έχει ενημερωθεί με αναγνωριστικό {{ param }}",
+      "deleted": "Ένα Interview Appointment έχει διαγραφτεί με αναγνωριστικό {{ param }}",
+      "delete": {
+        "question": "Είστε βέβαιοι όταν θέλετε να διαγράψετε το ακόλουθο Interview Appointment {{ id }};"
+      },
+      "detail": {
+        "title": "Interview Appointment"
+      },
+      "id": "ID",
+      "startTime": "Start Time",
+      "endTime": "End Time",
+      "googleMeetUrl": "Google Meet Url",
+      "status": "Status",
+      "interviewer": "Interviewer",
+      "interviewee": "Interviewee"
+    }
+  }
+}

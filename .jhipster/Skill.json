@@ -1,0 +1,29 @@
+{
+  "annotations": {
+    "changelogDate": "20240127201725"
+  },
+  "applications": "*",
+  "entityTableName": "skill",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "type",
+      "fieldType": "String"
+    }
+  ],
+  "name": "Skill",
+  "relationships": [
+    {
+      "otherEntityName": "personalDetail",
+      "otherEntityRelationshipName": "skills",
+      "relationshipName": "personalDetail",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

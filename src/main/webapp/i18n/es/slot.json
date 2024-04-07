@@ -1,0 +1,26 @@
+{
+  "interviewme6App": {
+    "slot": {
+      "home": {
+        "title": "Slots",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Slot",
+        "createOrEditLabel": "Crear o editar Slot",
+        "notFound": "Ningún Slots encontrado"
+      },
+      "created": "Un nuevo Slot ha sido creado con el identificador {{ param }}",
+      "updated": "Un Slot ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Slot ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Slot {{ id }}?"
+      },
+      "detail": {
+        "title": "Slot"
+      },
+      "id": "ID",
+      "slot": "Slot",
+      "isAvailable": "Is Available",
+      "interviewer": "Interviewer"
+    }
+  }
+}

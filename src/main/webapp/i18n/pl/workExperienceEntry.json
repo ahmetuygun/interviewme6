@@ -1,0 +1,40 @@
+{
+  "interviewme6App": {
+    "workExperienceEntry": {
+      "home": {
+        "title": "Work Experience Entry",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Dodaj Work Experience Entry",
+        "createOrEditLabel": "Dodaj lub edytuj: Work Experience Entry",
+        "notFound": "No Work Experience Entries found"
+      },
+      "created": "Utworzono nowy obiekt typu Work Experience Entry z identyfikatorem {{ param }}",
+      "updated": "Uaktualniono obiekt typu Work Experience Entry z identyfikatorem {{ param }}",
+      "deleted": "Usunięto obiekt typu Work Experience Entry z identyfikatorem {{ param }}",
+      "delete": {
+        "question": "Czy na pewno chcesz usunąć Work Experience Entry {{ id }}?"
+      },
+      "detail": {
+        "title": "Work Experience Entry"
+      },
+      "id": "ID",
+      "title": "Title",
+      "startDate": "Start Date",
+      "endDate": "End Date",
+      "company": "Company",
+      "description": "Description",
+      "industry": "Industry",
+      "formattedLocation": "Formatted Location",
+      "postalCode": "Postal Code",
+      "region": "Region",
+      "country": "Country",
+      "countryCode": "Country Code",
+      "rawInputLocation": "Raw Input Location",
+      "street": "Street",
+      "streetNumber": "Street Number",
+      "apartmentNumber": "Apartment Number",
+      "city": "City",
+      "personalDetail": "Personal Detail"
+    }
+  }
+}

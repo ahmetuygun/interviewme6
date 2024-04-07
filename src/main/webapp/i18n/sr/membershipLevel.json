@@ -1,0 +1,28 @@
+{
+  "interviewme6App": {
+    "membershipLevel": {
+      "home": {
+        "title": "Membership Levels",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Kreiraj novi Membership Level",
+        "createOrEditLabel": "Kreirajte ili izmenite Membership Level",
+        "notFound": "No Membership Levels found"
+      },
+      "created": "Kreiran je novi Membership Level pod nazivom {{ param }}",
+      "updated": "Membership Level pod nazivom {{ param }} je ažuriran",
+      "deleted": "Membership Level pod nazivom {{ param }} je obrisan",
+      "delete": {
+        "question": "Da li ste sigurni da želite da obrišete Membership Level pod nazivom {{ id }}?"
+      },
+      "detail": {
+        "title": "Membership Level"
+      },
+      "id": "ID",
+      "name": "Name",
+      "description": "Description",
+      "sessionAmount": "Session Amount",
+      "price": "Price",
+      "interviewee": "Interviewee"
+    }
+  }
+}

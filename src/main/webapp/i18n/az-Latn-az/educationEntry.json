@@ -1,0 +1,31 @@
+{
+  "interviewme6App": {
+    "educationEntry": {
+      "home": {
+        "title": "Education Entries",
+        "refreshListLabel": "Siyahını yenilə",
+        "createLabel": "Yeni Education Entry əlavə et",
+        "createOrEditLabel": "Yeni Education Entry əlavə et və ya yenilə",
+        "notFound": "Education Entries məlumatı tapılmadı"
+      },
+      "created": "{{ param }} ID ilə bir Education Entry əlavə edildi",
+      "updated": "{{ param }} nolu Education Entry dəyişildi",
+      "deleted": "{{ param }} nolu Education Entry silindi",
+      "delete": {
+        "question": "{{ id }} nolu Education Entry silinəcək. Davam etmək istəyirsiniz?"
+      },
+      "detail": {
+        "title": "Education Entry"
+      },
+      "id": "ID",
+      "title": "Title",
+      "startDate": "Start Date",
+      "endDate": "End Date",
+      "establishment": "Establishment",
+      "description": "Description",
+      "gpa": "Gpa",
+      "accreditation": "Accreditation",
+      "personalDetail": "Personal Detail"
+    }
+  }
+}

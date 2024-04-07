@@ -1,0 +1,53 @@
+<div class="d-flex justify-content-center">
+  <div class="col-9">
+    @if (interviewer) {
+      <div>
+
+        <h2 data-cy="intervieweeDetailsHeading"><span jhiTranslate="interviewme6App.interviewer.detail.title">Interviewer</span></h2>
+
+        <hr />
+        <jhi-alert-error></jhi-alert-error>
+
+        <jhi-alert></jhi-alert>
+
+        <div class="">
+          <jhi-personal-detail-detail
+            [photo]="interviewer.photo"
+            [photoContentType]="interviewer.photoContentType"
+            [personalDetailId]="interviewer.personalDetail?.id"
+            [cv]="interviewer.cv"
+            [cvContentType]="interviewer.cvContentType"
+          ></jhi-personal-detail-detail>
+        </div>
+
+
+        <div class="pt-5">
+
+        <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+          <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+        </button>
+
+        <button type="button" [routerLink]="['/interviewer', interviewer.id, 'edit']" class="btn btn-primary">
+          <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+        </button>
+        </div>
+
+
+        <div *ngIf="this.isOwnProfile" class="shadow-lg p-3 mb-5 bg-white rounded-4 mt-5">
+          <jhi-slot-update ></jhi-slot-update>
+        </div>
+
+        <div *ngIf="!this.isOwnProfile" class="shadow-lg p-3 mb-5 bg-white rounded-4 mt-5">
+          <jhi-appointment-update
+            [interviewer]="interviewer"
+          ></jhi-appointment-update>
+
+        </div>
+
+
+
+
+      </div>
+    }
+  </div>
+</div>

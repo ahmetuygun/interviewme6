@@ -1,0 +1,69 @@
+<div>
+  <h2 id="page-heading" data-cy="EducationEntryHeading">
+    <span jhiTranslate="interviewme6App.educationEntry.home.title">Education Entries</span>
+  </h2>
+
+  <jhi-alert-error></jhi-alert-error>
+
+  <jhi-alert></jhi-alert>
+
+
+  @if (educationEntries?.length === 0) {
+    <div class="alert alert-warning" id="no-result">
+      <span jhiTranslate="interviewme6App.educationEntry.home.notFound">No Education Entries found</span>
+    </div>
+  }
+
+  @if (educationEntries && educationEntries.length > 0) {
+
+    <div class="d-flex">
+      <button class="btn btn-info me-2" (click)="load()" [disabled]="isLoading">
+        <fa-icon icon="sync" [spin]="isLoading"></fa-icon>
+      </button>
+
+      <button
+        id="jh-create-entity"
+        data-cy="entityCreateButton"
+        class="btn btn-primary jh-create-entity create-education-entry"
+        [routerLink]="['/education-entry/new']"
+      >
+        <fa-icon icon="plus"></fa-icon>
+      </button>
+    </div>
+
+    <ul class="timeline">
+      <li *ngFor="let experience of educationEntries;">
+
+        <div class="row">
+          <div class="col-6">
+            <div>
+              <h6>{{ toCapital(experience.establishment) }}</h6>
+              <h6>{{ toCapital(experience.accreditation) }}</h6>
+              <p class="year rounded-4">{{ getPeriod(experience.startDate, experience.endDate) }}</p>
+            </div>
+          </div>
+          <div class="col-1">
+            <!-- Content for the second column -->
+            <div >
+
+              <div class="d-flex flex-column justify-content-end gap-1 pt-3">
+                <button [routerLink]="['/work-experience-entry', experience.id, 'edit']"
+                        class="btn btn-primary btn-circle p-1" data-cy="entityDeleteButton">
+                  <fa-icon icon="pencil-alt"></fa-icon>
+                </button>
+
+                <button type="submit" (click)="delete(experience)" class="btn btn-danger btn-circle"
+                        data-cy="entityDeleteButton">
+                  <fa-icon icon="times"></fa-icon>
+                </button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </li>
+
+    </ul>
+  }
+</div>

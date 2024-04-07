@@ -1,0 +1,28 @@
+{
+  "interviewme6App": {
+    "interviewee": {
+      "home": {
+        "title": "Interviewees",
+        "refreshListLabel": "Обновить список",
+        "createLabel": "Создать новый Interviewee",
+        "createOrEditLabel": "Создать или отредактировать Interviewee",
+        "notFound": "Interviewees не найдено"
+      },
+      "created": "Новый Interviewee создан с идентификатором {{ param }}",
+      "updated": "Interviewee обновлен с идентификатором {{ param }}",
+      "deleted": "Interviewee удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Interviewee {{ id }}?"
+      },
+      "detail": {
+        "title": "Interviewee"
+      },
+      "id": "ID",
+      "photo": "Photo",
+      "internalUser": "Internal User",
+      "personalDetail": "Personal Detail",
+      "membership": "Membership",
+      "appointment": "Appointment"
+    }
+  }
+}

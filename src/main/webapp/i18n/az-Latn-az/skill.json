@@ -1,0 +1,26 @@
+{
+  "interviewme6App": {
+    "skill": {
+      "home": {
+        "title": "Skills",
+        "refreshListLabel": "Siyahını yenilə",
+        "createLabel": "Yeni Skill əlavə et",
+        "createOrEditLabel": "Yeni Skill əlavə et və ya yenilə",
+        "notFound": "Skills məlumatı tapılmadı"
+      },
+      "created": "{{ param }} ID ilə bir Skill əlavə edildi",
+      "updated": "{{ param }} nolu Skill dəyişildi",
+      "deleted": "{{ param }} nolu Skill silindi",
+      "delete": {
+        "question": "{{ id }} nolu Skill silinəcək. Davam etmək istəyirsiniz?"
+      },
+      "detail": {
+        "title": "Skill"
+      },
+      "id": "ID",
+      "name": "Name",
+      "type": "Type",
+      "personalDetail": "Personal Detail"
+    }
+  }
+}

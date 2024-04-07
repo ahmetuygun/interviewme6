@@ -1,0 +1,29 @@
+{
+  "interviewme6App": {
+    "interviewer": {
+      "home": {
+        "title": "Interviewers",
+        "refreshListLabel": "Liste aktualisieren",
+        "createLabel": "Interviewer erstellen",
+        "createOrEditLabel": "Interviewer erstellen oder bearbeiten",
+        "notFound": "Keine Interviewers gefunden"
+      },
+      "created": "Interviewer erstellt mit ID {{ param }}",
+      "updated": "Interviewer aktualisiert mit ID {{ param }}",
+      "deleted": "Interviewer gelöscht mit ID {{ param }}",
+      "delete": {
+        "question": "Soll Interviewer {{ id }} wirklich dauerhaft gelöscht werden?"
+      },
+      "detail": {
+        "title": "Interviewer"
+      },
+      "id": "ID",
+      "photo": "Photo",
+      "internalUser": "Internal User",
+      "personalDetail": "Personal Detail",
+      "subjects": "Subjects",
+      "slots": "Slots",
+      "appointment": "Appointment"
+    }
+  }
+}

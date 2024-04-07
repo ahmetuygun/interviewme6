@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <property name="now" value="current_timestamp" dbms="postgresql"/>
+    <property name="floatType" value="float4" dbms="postgresql"/>
+    <property name="clobType" value="clob" dbms="postgresql"/>
+    <property name="blobType" value="blob" dbms="postgresql"/>
+    <property name="uuidType" value="uuid" dbms="postgresql"/>
+    <property name="datetimeType" value="datetime" dbms="postgresql"/>
+
+    <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240127200825_added_entity_Interviewer.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240127200925_added_entity_Interviewee.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240127201025_added_entity_MembershipLevel.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240127201125_added_entity_InterviewAppointment.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240127201225_added_entity_InterviewNote.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240127201325_added_entity_PersonalDetail.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240127201425_added_entity_WorkExperienceEntry.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240127201525_added_entity_EducationEntry.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240127201625_added_entity_Language.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240127201725_added_entity_Skill.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240127201825_added_entity_Slot.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240127201925_added_entity_InterviewSubject.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240323215740_added_entity_VideoCall.xml" relativeToChangelogFile="false"/>
+    <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
+    <include file="config/liquibase/changelog/20240127200825_added_entity_constraints_Interviewer.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240127200925_added_entity_constraints_Interviewee.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240127201125_added_entity_constraints_InterviewAppointment.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240127201425_added_entity_constraints_WorkExperienceEntry.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240127201525_added_entity_constraints_EducationEntry.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240127201625_added_entity_constraints_Language.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240127201725_added_entity_constraints_Skill.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240127201825_added_entity_constraints_Slot.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240127201925_added_entity_constraints_InterviewSubject.xml" relativeToChangelogFile="false"/>
+    <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
+    <!-- jhipster-needle-liquibase-add-incremental-changelog - JHipster will add incremental liquibase changelogs here -->
+</databaseChangeLog>

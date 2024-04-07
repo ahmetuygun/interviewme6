@@ -1,0 +1,33 @@
+{
+  "annotations": {
+    "changelogDate": "20240127201625"
+  },
+  "applications": "*",
+  "entityTableName": "language",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "code",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "isNative",
+      "fieldType": "Boolean"
+    }
+  ],
+  "name": "Language",
+  "relationships": [
+    {
+      "otherEntityName": "personalDetail",
+      "otherEntityRelationshipName": "language",
+      "relationshipName": "personalDetail",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

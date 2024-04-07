@@ -1,0 +1,26 @@
+{
+  "interviewme6App": {
+    "interviewSubject": {
+      "home": {
+        "title": "Interview Subject",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Dodaj Interview Subject",
+        "createOrEditLabel": "Dodaj lub edytuj: Interview Subject",
+        "notFound": "No Interview Subjects found"
+      },
+      "created": "Utworzono nowy obiekt typu Interview Subject z identyfikatorem {{ param }}",
+      "updated": "Uaktualniono obiekt typu Interview Subject z identyfikatorem {{ param }}",
+      "deleted": "Usunięto obiekt typu Interview Subject z identyfikatorem {{ param }}",
+      "delete": {
+        "question": "Czy na pewno chcesz usunąć Interview Subject {{ id }}?"
+      },
+      "detail": {
+        "title": "Interview Subject"
+      },
+      "id": "ID",
+      "name": "Name",
+      "parent": "Parent",
+      "interviewer": "Interviewer"
+    }
+  }
+}

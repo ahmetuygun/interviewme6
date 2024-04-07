@@ -1,0 +1,92 @@
+<div>
+  <h2 id="page-heading" data-cy="AppointmentHeading">
+    <span>Appointments</span>
+
+    <div class="d-flex justify-content-end">
+      <button class="btn btn-info me-2" (click)="load()" [disabled]="isLoading">
+        <fa-icon icon="sync" [spin]="isLoading"></fa-icon>
+        <span>Refresh list</span>
+      </button>
+
+      <button
+        id="jh-create-entity"
+        data-cy="entityCreateButton"
+        class="btn btn-primary jh-create-entity create-appointment"
+        [routerLink]="['/appointment/new']"
+      >
+        <fa-icon icon="plus"></fa-icon>
+        <span>Create a new Appointment</span>
+      </button>
+    </div>
+  </h2>
+
+  <jhi-alert-error></jhi-alert-error>
+
+  <jhi-alert></jhi-alert>
+
+  @if (appointments?.length === 0) {
+    <div class="alert alert-warning" id="no-result">
+      <span>No Appointments found</span>
+    </div>
+  }
+
+  @if (appointments && appointments.length > 0) {
+
+    <div class="container">
+      <div class="row">
+        @for (appointment of appointments; track trackId) {
+          <div class="col-md-6">
+            <div class="card mb-3 shadow-lg rounded-custom border-0 ">
+              <div class="row no-gutters align-items-center">
+                <div class="col-md-4 text-center">
+                  <img
+                    [src]="'data:' + appointment.interviewer?.photoContentType + ';base64,' + appointment.interviewer?.photo"
+                    class="card-img small-profile-image" alt="Profile Photo" style="max-width: 80%; max-height: 80%;"
+                    alt="interviewer image"
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                <span class="text-muted year rounded-4">
+                  <fa-icon icon="calendar-days" class="ms-1"></fa-icon> &nbsp;
+                  {{ this.formatDate(appointment) }}
+                  <fa-icon icon="clock" class="ms-1"></fa-icon> &nbsp;
+                  {{ appointment?.slot}} - {{ this.getOneHourLater(appointment?.slot) }}
+                </span>
+                    <dl class="row-md jh-entity-details">
+                      <dt>
+                        <span>Interviewer:</span>
+                        <fa-icon icon="user-tie" class="float-end ms-1 text-info"></fa-icon>
+                      </dt>
+                      <dd>
+                        <span>{{ appointment?.interviewer?.personalDetail?.firstName }} {{ appointment?.interviewer?.personalDetail?.lastName }} </span>
+                      </dd>
+                      <dt>
+                        <span>Interviewee:</span>
+                        <fa-icon icon="user-tie" class="float-end ms-1 text-success"></fa-icon>
+                      </dt>
+                      <dd>
+                        <span>{{ appointment?.interviewee?.personalDetail?.firstName }} {{ appointment?.interviewee?.personalDetail?.lastName }} </span>
+                      </dd>
+                    </dl>
+                    <div class="d-flex justify-content-end gap-1">
+                      <button type="submit" (click)="delete(appointment)" class="btn btn-danger btn-sm" data-cy="entityDeleteButton">
+                        <fa-icon icon="cancel"></fa-icon>
+                        <span class="d-none d-md-inline">Cancel</span>
+                      </button>
+                      <button type="submit" (click)="goToInterviewRoom(appointment)" class="btn btn-primary btn-sm" data-cy="entityDeleteButton">
+                        <fa-icon icon="video"></fa-icon>
+                        <span class="d-none d-md-inline">Start</span>
+                      </button>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        }
+      </div>
+    </div>
+  }
+</div>

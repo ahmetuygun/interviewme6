@@ -1,0 +1,28 @@
+{
+  "interviewme6App": {
+    "interviewee": {
+      "home": {
+        "title": "Interviewees",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Vytvořit Interviewee",
+        "createOrEditLabel": "Vytvořit nebo upravit Interviewee",
+        "notFound": "No Interviewees found"
+      },
+      "created": "Byl vytvořen potomek entity Interviewee s identifikátorem {{ param }}",
+      "updated": "Potomek entity Interviewee s identifikátorem {{ param }} byl upravený.",
+      "deleted": "Potomek entity Interviewee s identifikátorem {{ param }} bol smazaný.",
+      "delete": {
+        "question": "Jste si jisti, že chcete smazat Interviewee {{ id }}?"
+      },
+      "detail": {
+        "title": "Interviewee"
+      },
+      "id": "ID",
+      "photo": "Photo",
+      "internalUser": "Internal User",
+      "personalDetail": "Personal Detail",
+      "membership": "Membership",
+      "appointment": "Appointment"
+    }
+  }
+}

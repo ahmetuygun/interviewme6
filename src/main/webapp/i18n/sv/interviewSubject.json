@@ -1,0 +1,26 @@
+{
+  "interviewme6App": {
+    "interviewSubject": {
+      "home": {
+        "title": "Interview Subjects",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Skapa en ny Interview Subject",
+        "createOrEditLabel": "Skapa eller ändra en Interview Subject",
+        "notFound": "No Interview Subjects found"
+      },
+      "created": "En ny Interview Subject är skapad med id {{ param }}",
+      "updated": "En Interview Subject är uppdaterad med id  {{ param }}",
+      "deleted": "En Interview Subject är borttagen med id  {{ param }}",
+      "delete": {
+        "question": "Är du säker på att du vill ta bort Interview Subject {{ id }}?"
+      },
+      "detail": {
+        "title": "Interview Subject"
+      },
+      "id": "ID",
+      "name": "Name",
+      "parent": "Parent",
+      "interviewer": "Interviewer"
+    }
+  }
+}

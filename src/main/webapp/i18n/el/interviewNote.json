@@ -1,0 +1,27 @@
+{
+  "interviewme6App": {
+    "interviewNote": {
+      "home": {
+        "title": "Interview Notes",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Δημιουργήστε ένα νέο Interview Note",
+        "createOrEditLabel": "Δημιουργήστε η επεξεργαστείτε ένα Interview Note",
+        "notFound": "No Interview Notes found"
+      },
+      "created": "Ένα νέο Interview Note έχει δημιουργηθεί με αναγνωριστικό {{ param }}",
+      "updated": "Ένα Interview Note έχει ενημερωθεί με αναγνωριστικό {{ param }}",
+      "deleted": "Ένα Interview Note έχει διαγραφτεί με αναγνωριστικό {{ param }}",
+      "delete": {
+        "question": "Είστε βέβαιοι όταν θέλετε να διαγράψετε το ακόλουθο Interview Note {{ id }};"
+      },
+      "detail": {
+        "title": "Interview Note"
+      },
+      "id": "ID",
+      "noteText": "Note Text",
+      "rating": "Rating",
+      "actionItems": "Action Items",
+      "feedback": "Feedback"
+    }
+  }
+}

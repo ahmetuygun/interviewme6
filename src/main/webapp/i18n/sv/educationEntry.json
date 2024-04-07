@@ -1,0 +1,31 @@
+{
+  "interviewme6App": {
+    "educationEntry": {
+      "home": {
+        "title": "Education Entries",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Skapa en ny Education Entry",
+        "createOrEditLabel": "Skapa eller ändra en Education Entry",
+        "notFound": "No Education Entries found"
+      },
+      "created": "En ny Education Entry är skapad med id {{ param }}",
+      "updated": "En Education Entry är uppdaterad med id  {{ param }}",
+      "deleted": "En Education Entry är borttagen med id  {{ param }}",
+      "delete": {
+        "question": "Är du säker på att du vill ta bort Education Entry {{ id }}?"
+      },
+      "detail": {
+        "title": "Education Entry"
+      },
+      "id": "ID",
+      "title": "Title",
+      "startDate": "Start Date",
+      "endDate": "End Date",
+      "establishment": "Establishment",
+      "description": "Description",
+      "gpa": "Gpa",
+      "accreditation": "Accreditation",
+      "personalDetail": "Personal Detail"
+    }
+  }
+}

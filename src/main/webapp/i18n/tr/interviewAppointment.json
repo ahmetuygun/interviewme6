@@ -1,0 +1,29 @@
+{
+  "interviewme6App": {
+    "interviewAppointment": {
+      "home": {
+        "title": "Interview Appointments",
+        "refreshListLabel": "Listeyi yenile",
+        "createLabel": "Yeni Interview Appointment ekle",
+        "createOrEditLabel": "Yeni Interview Appointment ekle veya guncelle",
+        "notFound": "Interview Appointments kaydi bulunamadi"
+      },
+      "created": "{{ param }} ID ile bir Interview Appointment eklendi",
+      "updated": "{{ param }} nolu Interview Appointment guncellendi",
+      "deleted": "{{ param }} nolu Interview Appointment silindi",
+      "delete": {
+        "question": "{{ id }} nolu Interview Appointment silinecek. Devem etmek istiyor musunuz?"
+      },
+      "detail": {
+        "title": "Interview Appointment"
+      },
+      "id": "ID",
+      "startTime": "Start Time",
+      "endTime": "End Time",
+      "googleMeetUrl": "Google Meet Url",
+      "status": "Status",
+      "interviewer": "Interviewer",
+      "interviewee": "Interviewee"
+    }
+  }
+}

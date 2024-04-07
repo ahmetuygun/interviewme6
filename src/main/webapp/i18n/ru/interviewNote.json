@@ -1,0 +1,27 @@
+{
+  "interviewme6App": {
+    "interviewNote": {
+      "home": {
+        "title": "Interview Notes",
+        "refreshListLabel": "Обновить список",
+        "createLabel": "Создать новый Interview Note",
+        "createOrEditLabel": "Создать или отредактировать Interview Note",
+        "notFound": "Interview Notes не найдено"
+      },
+      "created": "Новый Interview Note создан с идентификатором {{ param }}",
+      "updated": "Interview Note обновлен с идентификатором {{ param }}",
+      "deleted": "Interview Note удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Interview Note {{ id }}?"
+      },
+      "detail": {
+        "title": "Interview Note"
+      },
+      "id": "ID",
+      "noteText": "Note Text",
+      "rating": "Rating",
+      "actionItems": "Action Items",
+      "feedback": "Feedback"
+    }
+  }
+}

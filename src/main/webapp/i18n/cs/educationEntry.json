@@ -1,0 +1,31 @@
+{
+  "interviewme6App": {
+    "educationEntry": {
+      "home": {
+        "title": "Education Entries",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Vytvořit Education Entry",
+        "createOrEditLabel": "Vytvořit nebo upravit Education Entry",
+        "notFound": "No Education Entries found"
+      },
+      "created": "Byl vytvořen potomek entity Education Entry s identifikátorem {{ param }}",
+      "updated": "Potomek entity Education Entry s identifikátorem {{ param }} byl upravený.",
+      "deleted": "Potomek entity Education Entry s identifikátorem {{ param }} bol smazaný.",
+      "delete": {
+        "question": "Jste si jisti, že chcete smazat Education Entry {{ id }}?"
+      },
+      "detail": {
+        "title": "Education Entry"
+      },
+      "id": "ID",
+      "title": "Title",
+      "startDate": "Start Date",
+      "endDate": "End Date",
+      "establishment": "Establishment",
+      "description": "Description",
+      "gpa": "Gpa",
+      "accreditation": "Accreditation",
+      "personalDetail": "Personal Detail"
+    }
+  }
+}

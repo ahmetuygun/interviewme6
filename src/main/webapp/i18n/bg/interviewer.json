@@ -1,0 +1,29 @@
+{
+  "interviewme6App": {
+    "interviewer": {
+      "home": {
+        "title": "Interviewers",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Създайте нов Interviewer",
+        "createOrEditLabel": "Създайте или редактирайте Interviewer",
+        "notFound": "Interviewers не са намерени"
+      },
+      "created": "Създаден е нов Interviewer с идентификатор {{ param }}",
+      "updated": "Interviewer с идентификатор {{ param }} e oбновен",
+      "deleted": "Interviewer с идентификатор {{ param }} е изтрит",
+      "delete": {
+        "question": "Наистина ли искате да изтриете Interviewer {{ id }}?"
+      },
+      "detail": {
+        "title": "Interviewer"
+      },
+      "id": "ID",
+      "photo": "Photo",
+      "internalUser": "Internal User",
+      "personalDetail": "Personal Detail",
+      "subjects": "Subjects",
+      "slots": "Slots",
+      "appointment": "Appointment"
+    }
+  }
+}

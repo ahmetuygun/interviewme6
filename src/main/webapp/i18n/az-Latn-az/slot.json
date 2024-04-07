@@ -1,0 +1,26 @@
+{
+  "interviewme6App": {
+    "slot": {
+      "home": {
+        "title": "Slots",
+        "refreshListLabel": "Siyahını yenilə",
+        "createLabel": "Yeni Slot əlavə et",
+        "createOrEditLabel": "Yeni Slot əlavə et və ya yenilə",
+        "notFound": "Slots məlumatı tapılmadı"
+      },
+      "created": "{{ param }} ID ilə bir Slot əlavə edildi",
+      "updated": "{{ param }} nolu Slot dəyişildi",
+      "deleted": "{{ param }} nolu Slot silindi",
+      "delete": {
+        "question": "{{ id }} nolu Slot silinəcək. Davam etmək istəyirsiniz?"
+      },
+      "detail": {
+        "title": "Slot"
+      },
+      "id": "ID",
+      "slot": "Slot",
+      "isAvailable": "Is Available",
+      "interviewer": "Interviewer"
+    }
+  }
+}

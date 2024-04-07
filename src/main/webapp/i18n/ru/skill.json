@@ -1,0 +1,26 @@
+{
+  "interviewme6App": {
+    "skill": {
+      "home": {
+        "title": "Skills",
+        "refreshListLabel": "Обновить список",
+        "createLabel": "Создать новый Skill",
+        "createOrEditLabel": "Создать или отредактировать Skill",
+        "notFound": "Skills не найдено"
+      },
+      "created": "Новый Skill создан с идентификатором {{ param }}",
+      "updated": "Skill обновлен с идентификатором {{ param }}",
+      "deleted": "Skill удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Skill {{ id }}?"
+      },
+      "detail": {
+        "title": "Skill"
+      },
+      "id": "ID",
+      "name": "Name",
+      "type": "Type",
+      "personalDetail": "Personal Detail"
+    }
+  }
+}

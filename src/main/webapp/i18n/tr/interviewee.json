@@ -1,0 +1,28 @@
+{
+  "interviewme6App": {
+    "interviewee": {
+      "home": {
+        "title": "Interviewees",
+        "refreshListLabel": "Listeyi yenile",
+        "createLabel": "Yeni Interviewee ekle",
+        "createOrEditLabel": "Yeni Interviewee ekle veya guncelle",
+        "notFound": "Interviewees kaydi bulunamadi"
+      },
+      "created": "{{ param }} ID ile bir Interviewee eklendi",
+      "updated": "{{ param }} nolu Interviewee guncellendi",
+      "deleted": "{{ param }} nolu Interviewee silindi",
+      "delete": {
+        "question": "{{ id }} nolu Interviewee silinecek. Devem etmek istiyor musunuz?"
+      },
+      "detail": {
+        "title": "Interviewee"
+      },
+      "id": "ID",
+      "photo": "Photo",
+      "internalUser": "Internal User",
+      "personalDetail": "Personal Detail",
+      "membership": "Membership",
+      "appointment": "Appointment"
+    }
+  }
+}
