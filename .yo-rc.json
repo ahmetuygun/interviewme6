@@ -32,9 +32,9 @@
     ],
     "feignClient": false,
     "gradleEnterpriseHost": null,
-    "herokuAppName": "InterviewMe6",
-    "herokuDeployType": "git",
-    "herokuJavaVersion": "17",
+    "herokuAppName": null,
+    "herokuDeployType": null,
+    "herokuJavaVersion": null,
     "jhipsterVersion": "8.1.0",
     "jwtSecretKey": "NWRmMzhkNmUyNGNiNDQ1MGQ4ODZkY2IxYmU4OWNhYjE5MGVhMDYyOGFhYzYzODY1ZTZlZThhZjFjOTFhNmU5NjI0YzVhOTFhZGViYzYwNjkyOGU3YzEzODI4OWEzYTg4ZDU0ZGVkOTRmZGZjNjhmMzg0ZjgyMWY2ODViMTIyYjU=",
     "languages": [
